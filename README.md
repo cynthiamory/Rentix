@@ -1,2 +1,2 @@
 # Rentix
-An Event Rental Application
+ Event Rental Application
