@@ -1,2 +1,4 @@
 # Rentix
- Event Rental Application
+
+Event Rental Application
+Hello lovely people
