@@ -1,3 +1,5 @@
+//CYNTHIA WAS HERE :)
+
 //IMPORT DOTENV PACKAGE
 require("dotenv").config();
 
