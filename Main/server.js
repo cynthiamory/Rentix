@@ -1,3 +1,4 @@
+// IMPORTS AND DEPENDENCIES
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -15,7 +16,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: 'This is a secret',
   cookie: {
     maxAge: 300000,
     httpOnly: true,
@@ -35,6 +36,7 @@ app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+//MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
