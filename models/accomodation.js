@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class accomodation extends Model {}
+class Accomodation extends Model {}
 
-accomodation.init(
+Accomodation.init(
   {
     // define columns
     id: {
@@ -44,4 +44,4 @@ accomodation.init(
 );
 
 //EXPORT
-module.exports = accomodation;
+module.exports = Accomodation;
