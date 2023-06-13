@@ -5,7 +5,6 @@ require("dotenv").config();
 
 //IMPORT SEQUELIZE CONSTRUCTOR FROM LIBRARY
 const Sequelize = require('sequelize');
-require('dotenv').config();
 
 let sequelize;
 

@@ -17,14 +17,15 @@ Trending.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        trending_desciption:
+        trending_description:
         {
             type: DataTypes.STRING,
             allowNull: false,
         },
         user_id: {
+            type: DataTypes.INTEGER,
             references: {
-                model: 'accomadation',
+                model: 'accomodation',
                 key: 'id',
             },
         },

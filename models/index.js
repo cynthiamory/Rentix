@@ -22,7 +22,7 @@ Catering.belongsTo(Accomodation, {
 });
 Accomodation.hasMany(Trending, { 
     foreignKey: 'user_id',
-    onDelete: 'CASCADE'
+    // onDelete: 'CASCADE'
 });
 Trending.belongsTo(Accomodation, {
     foreignKey: 'user_id',
