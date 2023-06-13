@@ -1,6 +1,5 @@
 
 # Rentix
-## CYNTHIA WAS HERE
 
 ## Table of Contents
 
