@@ -16,7 +16,7 @@ Catering.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        catering_desciption:
+        catering_description:
         {
             type: DataTypes.STRING,
             allowNull: false,
@@ -32,8 +32,9 @@ Catering.init(
 
         },
         user_id: {
+            type: DataTypes.INTEGER,
             references: {
-                model: 'accomadation',
+                model: 'accomodation',
                 key: 'id',
             },
         },

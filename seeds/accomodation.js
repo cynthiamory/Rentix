@@ -4,31 +4,31 @@ const { Accomodation} = require('../models');
 const accomodationData = [
   {
     accomodation_place: '',
-    accomodation_desciption: '',
+    accomodation_description: '',
     accomodation_location: '',
     price: 100,
   },
   {
     accomodation_place: '',
-    accomodation_desciption: '',
+    accomodation_description: '',
     accomodation_location: '',
     price: 100,
   },
   {
     accomodation_place: '',
-    accomodation_desciption: '',
+    accomodation_description: '',
     accomodation_location: '',
     price: 100,
   },
   {
     accomodation_place: '',
-    accomodation_desciption: '',
+    accomodation_description: '',
     accomodation_location: '',
     price: 100,
   },
   {
     accomodation_place: '',
-    accomodation_desciption: '',
+    accomodation_description: '',
     accomodation_location: '',
     price: 100,
   },
