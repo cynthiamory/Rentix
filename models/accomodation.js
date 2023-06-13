@@ -17,7 +17,7 @@ Accomodation.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    accomodation_desciption:
+    accomodation_description:
     {
          type: DataTypes.STRING,
          allowNull: false,

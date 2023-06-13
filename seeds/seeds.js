@@ -1,17 +1,16 @@
-//CYNTHIA WAS HERE :)
 
 // PURPOSE: TO SEED THE DATABASE WITH DATA
-const seedTrending = require('./trending-seeds');
-const seedAccomodation = require('./accomodation-seeds');
-const seedCatering = require('./catering-seeds');
-const seedTransportation = require('./transportation-seeds');
+const sequelize = require('../config/connection');
+const seedTrending = require('./trending');
+const seedAccomodation = require('./accomodation');
+const seedCatering = require('./catering');
+const seedTransportation = require('./transportation');
 
 // IMPORT SEQUELIZE CONNECTION
-const sequelize = require('../config/connection');
 
 // PURPOSE: TO SEED THE DATABASE WITH DATA
 const seedAll = async () => {
-  await sequelize.sync({ force: true });
+  await sequelize.sync({ force: false });
   console.log('\n----- DATABASE SYNCED -----\n');
   await seedTrending();
   console.log('\n----- Trending SEEDED -----\n');

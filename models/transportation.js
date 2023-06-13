@@ -17,7 +17,7 @@ Transportation.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        transportation_desciption:
+        transportation_description:
         {
             type: DataTypes.STRING,
             allowNull: false,
@@ -33,8 +33,9 @@ Transportation.init(
 
         },
         user_id: {
+            type: DataTypes.INTEGER,
             references: {
-                model: 'accomadation',
+                model: 'accomodation',
                 key: 'id',
             },
         },
