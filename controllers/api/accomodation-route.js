@@ -33,22 +33,11 @@ router.get('/',async (req, res) => {
     }});
 
 
-    router.get('/accomodation/:id',async (req, res) => {
+    router.get('/:id',async (req, res) => {
       // find one accomodation  by its `id` value
       try{
        const Accomodata = await Accomodation.findByPk(req.params.id,{
       
-        include: [ 
-          // {
-          //   model: Catering
-          // },
-          // {
-          //   model: Transportation
-          // },
-          // {
-          //   model: Accomodation
-          // },
-        ]
       });
 
     const accomodationserial =Accomodata.get({plain:true})
