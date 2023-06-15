@@ -1,10 +1,9 @@
 const router = require('express').Router();
 
-const Catering  = require('./Catering');
+const home =require('./home-routes');
+const apiRoutes = require('./api');
 
-const trending =require('./trending-routes');
-
-router.use('/', trending);
-router.use('/catering', Catering);
+router.use('/', home);
+router.use('/api', apiRoutes);
 
 module.exports = router;
