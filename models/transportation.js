@@ -40,11 +40,12 @@ Transportation.init(
         trending_id: {
 
             type: DataTypes.INTEGER,
-            references: {
-                model: 'accomodation',
-                key: 'id',
-            },
+            // references: {
+            //     model: 'trending',
+            //     key: 'id',
+            // },
        
+     }
     },
 
     {
@@ -54,6 +55,7 @@ Transportation.init(
         underscored: true,
         modelName: 'transportation',
     }
+
 );
 
 //EXPORT
