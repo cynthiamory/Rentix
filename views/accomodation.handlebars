@@ -1,7 +1,17 @@
-<h5>Accomodation here</h5>
-<section>
-    <img src="/images/{{accomodation.filename}}" alt="">
-    <div>
-        <h3>{{accomodation.accomodation_description}}</h3>
+<img class = "accomodation-Logo" src="/images/lawrence-chismorie-6fE0xjiZvrs-unsplash.jpg" alt="" srcset="">
+<h2 class = "Acc-Writing">Our Properties</h2>
+<section class = "Acc-Main">
+
+    {{#each Accomodationserial}}
+
+   
+    <div class = "Acc-cards">
+         <img  class = "cards-img"src="/images/cozy-cottage.jpg" alt="">
+        <a class = "Cards-Title" href = "/api/accomodation/{{id}}">{{accommodation_place}}</a>
+        
+        <p class = "Cards-Location">{{accommodation_location}}</p>
+        <p class = "price">$ {{price}}</p>
     </div>
+
+    {{/each}}
 </section>
