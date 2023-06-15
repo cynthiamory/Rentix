@@ -10,6 +10,7 @@ const seedTransportation = require('./transportation');
 
 // PURPOSE: TO SEED THE DATABASE WITH DATA
 const seedAll = async () => {
+  try{
   await sequelize.sync({ force: false });
   console.log('\n----- DATABASE SYNCED -----\n');
   await seedTrending();
@@ -26,7 +27,10 @@ const seedAll = async () => {
   console.log('\n----- Transportation TAGS SEEDED -----\n');
 
   process.exit(0);
+}catch (error) {
+  console.error('Seeding failed:', error);
+  process.exit(1);
 };
-
+}
 // CALL THE FUNCTION
 seedAll();

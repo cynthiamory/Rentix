@@ -22,13 +22,6 @@ Trending.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        user_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'accomodation',
-                key: 'id',
-            },
-        },
     },
     {
         sequelize,
