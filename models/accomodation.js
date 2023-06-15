@@ -13,16 +13,16 @@ Accomodation.init(
       primaryKey: true,
       autoIncrement: true
     },
-      accomodation_place: {
+      accommodation_place: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    accomodation_description:
+    accommodation_description:
     {
          type: DataTypes.STRING,
          allowNull: false,
      }, 
-     accomodation_location:
+     accommodation_location:
     {
          type: DataTypes.STRING,
          allowNull: false,
