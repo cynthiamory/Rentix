@@ -31,6 +31,10 @@ Catering.init(
             allowNull: false,
 
         },
+        filename: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
         trending_id: {
             type: DataTypes.INTEGER,
             references: {

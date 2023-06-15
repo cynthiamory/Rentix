@@ -7,7 +7,8 @@ const transportationData = [
     transportation_description: "A stylish and elegant luxury sedan for comfortable and luxurious transportation.",
     capacity: 4,
     price: 150,
-    trending_id: 1
+    trending_id: 1,
+ 
   },
   {
     transportation_name: "Stretch Limousine",
