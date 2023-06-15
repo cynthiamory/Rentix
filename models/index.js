@@ -1,30 +1,30 @@
 const Accomodation = require('./accomodation');
-const Transportation = require('./Transportation');
+const Transportation = require('./transportation');
 const Catering = require('./catering');
 const Trending = require('./Trending');
 
 
-// // Accomodation.hasMany(Transportation, { 
-// //     foreignKey: 'trending_id',
-// //     onDelete: 'CASCADE'
-// // });
-// // Transportation.belongsTo(Accomodation, {
-// //     foreignKey: 'trending_id',
-// //     onDelete: 'CASCADE'
-// // });
-// Accomodation.hasMany(Catering, { 
+// Trending.hasMany(Transportation, { 
+//     foreignKey: 'trending_id',
+//     onDelete: 'CASCADE'
+// });
+// Transportation.belongsTo(Trending, {
+//     foreignKey: 'trending_id',
+//     onDelete: 'CASCADE'
+// });
+// Trending.hasMany(Catering, { 
 //     foreignKey: 'trending_id',
 //     onDelete: 'CASCADE'
 // });  
-// Catering.belongsTo(Accomodation, {
+// Catering.belongsTo(Trending, {
 //     foreignKey: 'trending_id',
 //     onDelete: 'CASCADE'
 // });
-// Accomodation.hasMany(Trending, { 
+// Trending.hasMany(Accomodation, { 
 //     foreignKey: 'trending_id',
 //     // onDelete: 'CASCADE'
 // });
-// Trending.belongsTo(Accomodation, {
+// Accomodation.belongsTo(Trending,{
 //     foreignKey: 'trending_id',
 //     onDelete: 'CASCADE'
 // });
