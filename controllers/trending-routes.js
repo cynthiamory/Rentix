@@ -54,8 +54,8 @@ router.get('/:id',async (req, res) => {
   res.render('trending',{
     trend,
 
-    username: req.session.username,
-    logged_in: req.session.logged_in
+    // username: req.session.username,
+    // logged_in: req.session.logged_in
   })
 }catch(err) {
     console.log(err);
