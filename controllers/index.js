@@ -1,9 +1,10 @@
 const router = require('express').Router();
 
-// const apiRoutes = require('./api');
+const Catering  = require('./Catering');
+
 const trending =require('./trending-routes');
 
 router.use('/', trending);
-// router.use('/api', apiRoutes);
+router.use('/catering', Catering);
 
 module.exports = router;
