@@ -13,7 +13,7 @@ Accomodation.init(
       primaryKey: true,
       autoIncrement: true
     },
-    accommodation_place: {
+      accommodation_place: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -31,14 +31,7 @@ Accomodation.init(
         type: DataTypes.INTEGER,
         allowNull: false,
         
-    },
-    trending_id: {
-      type: DataTypes.INTEGER,
-      references: {
-          model: 'trending',
-          key: 'id',
-      },
-  },
+    }
     },
   
   {
