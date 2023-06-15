@@ -31,10 +31,10 @@ Catering.init(
             allowNull: false,
 
         },
-        user_id: {
+        trending_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'accomodation',
+                model: 'trending',
                 key: 'id',
             },
         },

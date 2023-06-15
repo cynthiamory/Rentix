@@ -1,32 +1,35 @@
 const Accomodation = require('./accomodation');
-const Transportation = require('./Transportation');
+const Transportation = require('./transportation');
 const Catering = require('./catering');
 const Trending = require('./Trending');
 
-
-Accomodation.hasMany(Transportation, { 
-    foreignKey: 'user_id',
+Trending.hasMany(Accomodation, { 
+    foreignKey: 'trending_id',
     onDelete: 'CASCADE'
 });
-Transportation.belongsTo(Accomodation, {
-    foreignKey: 'user_id',
+Trending.hasMany(Transportation, { 
+    foreignKey: 'trending_id',
     onDelete: 'CASCADE'
 });
-Accomodation.hasMany(Catering, { 
-    foreignKey: 'user_id',
+Trending.hasMany(Catering, { 
+    foreignKey: 'trending_id',
     onDelete: 'CASCADE'
 });  
-Catering.belongsTo(Accomodation, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE'
-});
-Accomodation.hasMany(Trending, { 
-    foreignKey: 'user_id',
-    // onDelete: 'CASCADE'
-});
-Trending.belongsTo(Accomodation, {
-    foreignKey: 'user_id',
+Accomodation.belongsTo(Trending, {
+    foreignKey: 'trending_id',
     onDelete: 'CASCADE'
 });
 
-module.exports = { Accomodation, Transportation, Catering, Trending };
+Transportation.belongsTo(Trending, {
+    foreignKey: 'trending_id',
+    onDelete: 'CASCADE'
+});
+Catering.belongsTo(Trending, {
+    foreignKey: 'trending_id',
+    onDelete: 'CASCADE'
+});
+
+module.exports = { Accomodation, 
+    Transportation,
+     Catering,
+      Trending };
