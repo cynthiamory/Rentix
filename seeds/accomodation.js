@@ -115,7 +115,10 @@ const accomodationData =
       accommodation_place: "Treehouse Getaway",
       accommodation_description: "A unique treehouse retreat surrounded by lush forests, providing a magical and adventurous escape.",
       accommodation_location: "British Columbia, Canada",
+      price: 1800,
+      trending_id:2,
       price: 1800
+
     },
     {
       accommodation_place: "Safari Lodge",
