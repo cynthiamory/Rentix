@@ -135,6 +135,7 @@ const accomodationData =
       accommodation_location: "British Columbia, Canada",
       price: 1800,
       trending_id:2,
+      filename:'homepage,png',
     },
     {
       accommodation_place: "Safari Lodge",
