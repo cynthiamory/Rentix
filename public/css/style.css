@@ -103,9 +103,7 @@ background-color: #30392f;
 color: aliceblue;
 
 }
-.site-nav li{
 
-}
 .site-nav a {
   color: #EBEBD3;
   display: block;
@@ -124,7 +122,15 @@ color: aliceblue;
   text-align: right;
   color: rgba(255,255,255,.4);
 } 
-
+#Profile-Dropdown {
+  display: none; /* Initially hide the select dropdown */
+}
+.pro:hover{
+ 
+}
+.pro:hover #Profile-Dropdown {
+  display: block; /* Show the select dropdown when hovering over the list item */
+}
 
 
 .menu-toggle {
@@ -170,6 +176,7 @@ color: aliceblue;
 
 
 
+
 .Hero-Content{
   background-image: url("/images/pexels-asad-photo-maldives-3155666.jpg"); 
   background-position: center;
@@ -187,6 +194,7 @@ color: aliceblue;
   border: none;
 
 }
+
 
 ::placeholder {
   color: black;
