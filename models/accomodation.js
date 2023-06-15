@@ -35,10 +35,10 @@ Accomodation.init(
     
     trending_id: {
       type: DataTypes.INTEGER,
-      references: {
-          model: 'trending',
-          key: 'id',
-      },
+      // references: {
+      //     model: 'trending',
+      //     key: 'id',
+      // },
   },
 },
    
