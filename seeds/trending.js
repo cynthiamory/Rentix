@@ -5,27 +5,27 @@ const trendingData = [
   {
     trending_title: '',
     trending_description: '',
-    trending_id: 1,
+    user_id: 1,
   },
   {
     trending_title: '',
     trending_description: '',
-    trending_id: 2,
+    user_id: 2,
   },
   {
     trending_title: '',
     trending_description: '',
-    trending_id: 3,
+    user_id: 3,
   },
   {
     trending_title: '',
     trending_description: '',
-    trending_id: 4,
+    user_id: 4,
   },
   {
     trending_title: '',
     trending_description: '',
-    trending_id: 5,
+    user_id: 5,
   },
 
 ];
