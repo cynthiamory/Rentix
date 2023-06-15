@@ -46,8 +46,7 @@ Transportation.init(
             // },
        
      }
-    },
-
+ },
     {
         sequelize,
         timestamps: false,
