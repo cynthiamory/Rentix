@@ -1,24 +1,447 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    font-family: 'Playfair', serif;
+    transition: ease-in-out 200ms;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+
+
+
+/*  */
+
+
+
+.Primary-Header{
+display:flex;
+justify-content: space-around;
+background-color: chocolate;
+color: aliceblue;
+}
+
+.site-nav a {
+  color: #EBEBD3;
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 100%;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 0.6em;
+  width: 1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+} 
+
+
+
+
+
+
+
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #EBEBD3;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+.Hero-Content{
+  background-color: #acbcbc;
+  color: slategray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:1rem;
+  /* flex-direction: column; */
+}
+
+.Main-Left{
+ 
+}
+h2,h3,input{
+  font-size:3rem;
+}
+
+ img{
+border-radius: 6px;
+object-fit: cover;
+width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    clip-path: initial;
+  }
+  
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+  
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+  
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+  
+  .site-nav--icon {
+    display: none;
+  }
+  
 }

@@ -9,25 +9,23 @@ router.get('/',async (req, res) => {
   // be sure to include its associated Products
   try{
     const trendingdata= await Trending.findAll({
-    include: [ 
-      // {
-      //   model: Catering
-      // },
-      // {
-      //   model: Transportation
-      // },
-      // {
-      //   model: Accomodation
-      // },
-    ]
+    // include: [ 
+     
+    //   {
+    //     model: Transportation
+    //   },
+    //   {
+    //     model: Accomodation
+    //   },
+    // ]
   })
   // serialize Data
   const trending =trendingdata.map((trending)=>trending.get({plain:true}));
 
   res.render('homepage',{
-    trending,
-    username: req.session.username,
-      logged_in: req.session.logged_in
+    trending
+    // username: req.session.username,
+    //   logged_in: req.session.logged_in
   })
 }catch(err) {
     console.log(err);

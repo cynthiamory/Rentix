@@ -1,7 +1,7 @@
-<h1>HomePage</h1>
+{{!-- <h1>HomePage</h1>
 <label for="file">Upload your file here</label>
 <input type="file
-" name="file">
+" name="file"> --}}
 {{!-- <!-- Loop over each object in the projects array -->
 {{#each projects as |project| }}
 <div class="row mb-4 project">
@@ -26,3 +26,47 @@
   </div>
 </div>
 {{/each}} --}}
+
+
+
+ <header class = "Primary-Header">
+
+
+  <h1 class="logo">Rentix<span></span></h1>
+  
+  <nav class="site-nav">
+      <ul>
+        <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li> 
+        <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
+        {{!-- <li><a href=""><i class="fa fa-pencil site-nav--icon"></i>Blog</a></li> --}}
+        {{!-- <li><a href=""><i class="fa fa-usd site-nav--icon"></i>Pricing</a></li> --}}
+        <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+        <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Profile</a></li>
+
+      </ul> 
+  </nav>
+  
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>
+  
+
+</header>
+
+<section class="Hero-Content">
+
+<aside class="Main-Left">
+<h2 class = "rentix">Who are we?</h2>
+<h3 class = "rentix">We Provide Rental Services for every need </h3>
+<input type="text"id="inputID" >
+</aside>
+
+<img src="/images/Main-Right.jpg" alt="" srcset="">
+{{!-- <aside class="Main-Right">
+  
+</aside> --}}
+
+</section>
+{{!-- <span >like..</span> --}}
+
+<script src="/js/index.js"></script>
