@@ -31,15 +31,19 @@ Catering.init(
             allowNull: false,
 
         },
-        user_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'accomodation',
-                key: 'id',
-            },
-        },
-    },
 
+        filename: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
+        trending_id: {
+            type: DataTypes.INTEGER,
+            // references: {
+            //     model: 'trending',
+            //     key: 'id',
+            // },
+    }
+    },
     {
         sequelize,
         timestamps: false,
@@ -47,6 +51,7 @@ Catering.init(
         underscored: true,
         modelName: 'catering',
     }
+
 );
 
 //EXPORT

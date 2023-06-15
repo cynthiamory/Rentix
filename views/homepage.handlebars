@@ -1,72 +1,67 @@
-{{!-- <h1>HomePage</h1>
-<label for="file">Upload your file here</label>
-<input type="file
-" name="file"> --}}
-{{!-- <!-- Loop over each object in the projects array -->
-{{#each projects as |project| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
-    </h2>
-    <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p>
-  </div>
-</div>
-{{/each}} --}}
-
-
-
- <header class = "Primary-Header">
-
+<header class="Primary-Header">
 
   <h1 class="logo">Rentix<span></span></h1>
-  
-  <nav class="site-nav">
-      <ul>
-        <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li> 
-        <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
-        {{!-- <li><a href=""><i class="fa fa-pencil site-nav--icon"></i>Blog</a></li> --}}
-        {{!-- <li><a href=""><i class="fa fa-usd site-nav--icon"></i>Pricing</a></li> --}}
-        <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
-        <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Profile</a></li>
 
-      </ul> 
+  <nav class="site-nav">
+    <ul>
+      <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+      <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
+      <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+      <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Profile</a></li>
+
+    </ul>
   </nav>
-  
+
   <div class="menu-toggle">
     <div class="hamburger"></div>
   </div>
-  
 
 </header>
 
 <section class="Hero-Content">
 
-<aside class="Main-Left">
-<h2 class = "rentix">Who are we?</h2>
-<h3 class = "rentix">We Provide Rental Services for every need </h3>
-<input type="text"id="inputID" >
-</aside>
+  <aside class="Main-Left">
 
-<img src="/images/Main-Right.jpg" alt="" srcset="">
-{{!-- <aside class="Main-Right">
-  
-</aside> --}}
+    <h3 class="rentix">Choose Rentix for Your Next  <span><input type="text" id="inputID" /></span> </h3>
+    <p class = "rentix-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, obcaecati?</p>
+
+    <input type="search" class = "Seach-query" value ="Las Vegas">
+    <input type="submit" class = "submit-btn"></input>
+    
+
+  </aside>
+
+
 
 </section>
-{{!-- <span >like..</span> --}}
+
+<h2 class="rentix-main">Popular Residences. </h2>
+<section class="Trending-Section">
+
+
+{{#each trending}}
+
+<div class="cards">
+hello
+
+<p>{{ trending_title}}</p>
+<p>{{trending_description}}</p>
+</div>
+
+{{/each}}
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+{{! <span>like..</span> }}
 
 <script src="/js/index.js"></script>
