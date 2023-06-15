@@ -31,8 +31,16 @@ Accomodation.init(
         type: DataTypes.INTEGER,
         allowNull: false,
         
-    }
     },
+    trending_id: {
+      type: DataTypes.INTEGER,
+      references: {
+          model: 'trending',
+          key: 'id',
+      },
+  },
+
+   
   
   {
     sequelize,
