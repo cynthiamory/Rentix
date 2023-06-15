@@ -12,11 +12,11 @@ Catering.init(
             primaryKey: true,
             autoIncrement: true
         },
-        catering_name: {
+        dish_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        catering_description:
+        dish_description:
         {
             type: DataTypes.STRING,
             allowNull: false,
