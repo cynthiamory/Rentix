@@ -33,7 +33,7 @@ router.get('/',async (req, res) => {
     }});
 
 
-    router.get('/:id',async (req, res) => {
+    router.get('/accomodation/:id',async (req, res) => {
       // find one accomodation  by its `id` value
       try{
        const Accomodata = await Accomodation.findByPk(req.params.id,{
@@ -50,9 +50,11 @@ router.get('/',async (req, res) => {
           // },
         ]
       });
-    const accomodationserial =Accomodata.get({plain:true})
 
-      res.render('Accomodation',{
+    const accomodationserial =Accomodata.get({plain:true})
+    console.log(accomodationserial)
+
+      res.render('accomodation',{
         accomodationserial,
     
         // username: req.session.username,

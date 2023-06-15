@@ -32,6 +32,10 @@ Accomodation.init(
         allowNull: false,
         
     },
+    accommodation_filename:{
+      type: DataTypes.STRING,
+      allowNull:false
+    },
     
     trending_id: {
       type: DataTypes.INTEGER,
