@@ -10,7 +10,7 @@ const seedTransportation = require('./transportation');
 
 // PURPOSE: TO SEED THE DATABASE WITH DATA
 const seedAll = async () => {
-  await sequelize.sync({ force: false });
+  await sequelize.sync({ force: false});
   console.log('\n----- DATABASE SYNCED -----\n');
   await seedTrending();
   console.log('\n----- Trending SEEDED -----\n');

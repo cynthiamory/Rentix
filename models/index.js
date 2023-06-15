@@ -1,5 +1,5 @@
 const Accomodation = require('./accomodation');
-const Transportation = require('./Transportation');
+const Transportation = require('./transportation');
 const Catering = require('./catering');
 const Trending = require('./Trending');
 
