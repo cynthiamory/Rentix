@@ -101,12 +101,16 @@ display:flex;
 justify-content: space-between;
 background-color: #30392f;
 color: aliceblue;
-}
 
+}
+.site-nav li{
+
+}
 .site-nav a {
   color: #EBEBD3;
   display: block;
-  padding: 2em 4em 2em 1.5em;
+  
+  padding: 2em 4em 2em 9.5em;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -115,8 +119,8 @@ color: aliceblue;
 .site-nav--icon {
   display: inline-block;
   font-size: 1.5em;
-  margin-right: 0.6em;
-  width: 1em;
+
+  /* width: 1em; */
   text-align: right;
   color: rgba(255,255,255,.4);
 } 
@@ -253,15 +257,84 @@ flex-wrap: wrap;
 
 
 
+/* acc */
+.accomodation-Logo{
+  object-fit: cover;
+  width:100%;
+  height: 60vh;
+}
+.Acc-Main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
 
+}
+.Acc-cards{
+  height:390px;
+  width:10%;
+  border:1px solid black;
+  border-radius: 10px;
+  margin:2%;
+ text-align: center;
+  
+}
+.Acc-Writing{
+  display:flex;
+  justify-content: center;
+}
+.Cards-Title{
+  /* text-decoration: none; */
+  color: black;
+  font-size:1.2rem;
+  font-weight: 600;
+}
+.price{
+  font-weight: bold;
+}
+/*  */
 
+.transportation-Logo{
+  object-fit: cover;
+  width:100%;
+  height: 60vh;
+}
 
+.trans-Writing{
+  display:flex;
+  justify-content: center;
+}
+.trans-Main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+.Trans-Cards{
+  /* height:340px; */
+  width:10%;
+  border:1px solid black;
+  border-radius: 10px;
+  margin:2%;
+ text-align: center;
+}
 
+/*  */
+.Primary-footer{
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #30392f;
+  justify-content: space-around;
+color: aliceblue;
+width:100%;
 
-
-
-
-
+}
+.footer-column li{
+  list-style: none;
+}
+.footer-link{
+  color: aliceblue;
+}
 
 
 

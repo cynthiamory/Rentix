@@ -1,16 +1,15 @@
-<h5>Transportation Page</h5>
-{{transportation_name}}
-{{!-- <div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
-</div> --}}
+<img  class = "transportation-Logo"src="/images/pexels-julia-volk-5207636.jpg" alt="" srcset="">
+<h2 class="trans-Writing">Whip To Rip!</h2>
+
+<section class="trans-Main">
+
+{{#each transport}}
+
+<div class="Trans-Cards">
+<img  class = "cards-img"src="/images/pexels-adrian-dorobantu-2127732.jpg" alt="">
+  <a href="/api/transport/{{id}}" class="Cards-Title">{{transportation_name}}</a>
+  <p>{{capacity}}</p>
+  <p>{{price}}</p>
+</div>
+{{/each}}
+</section>
