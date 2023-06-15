@@ -1,3 +1,14 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&family=Montserrat:wght@200;300&display=swap');
+
+
+
+
+
+
+
+
+
 /* Box sizing rules */
 *,
 *::before,
@@ -36,7 +47,8 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     scroll-behavior: smooth;
-    font-family: 'Playfair', serif;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
     transition: ease-in-out 200ms;
 }
 
@@ -82,6 +94,9 @@ select {
 /*  */
 
 
+/* font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Mulish', sans-serif; */
 
 .Primary-Header{
 display:flex;
@@ -180,6 +195,7 @@ color: aliceblue;
 }
 h2,h3,input{
   font-size:3rem;
+  font-family: 'Lora', serif;
 }
 
  img{
