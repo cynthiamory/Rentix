@@ -1,3 +1,4 @@
+// IMPORTS AND DEPENDENCIES
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -35,9 +36,11 @@ const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+//MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use(routes);
 
