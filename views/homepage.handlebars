@@ -23,17 +23,47 @@
 <section class="Hero-Content">
 
   <aside class="Main-Left">
-    <h2 class="rentix">Who are we?</h2>
-    <h3 class="rentix">We Provide Rental Services for every need </h3>
-    <input type="text" id="inputID" />
+
+    <h3 class="rentix">Choose Rentix for Your Next  <span><input type="text" id="inputID" /></span> </h3>
+    <p class = "rentix-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, obcaecati?</p>
+
+    <input type="search" class = "Seach-query" value ="Las Vegas">
+    <input type="submit" class = "submit-btn"></input>
+    
+
   </aside>
 
-  <img src="/images/Main-Right.jpg" alt="" srcset="" />
-  {{! <aside class="Main-Right">
 
-  </aside> }}
 
 </section>
+
+<h2 class="rentix-main">Popular Residences. </h2>
+<section class="Trending-Section">
+
+
+{{#each trending}}
+
+<div class="cards">
+
+
+<p>{{trending_title}}</p>
+<p>{{trending_description}}</p>
+</div>
+
+{{/each}}
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
 {{! <span>like..</span> }}
 
 <script src="/js/index.js"></script>

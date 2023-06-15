@@ -38,12 +38,12 @@ Catering.init(
           },
         trending_id: {
             type: DataTypes.INTEGER,
-            references: {
-                model: 'accomodation',
-                key: 'id',
-            },
+            // references: {
+            //     model: 'trending',
+            //     key: 'id',
+            // },
+    }
     },
-
     {
         sequelize,
         timestamps: false,
@@ -51,6 +51,7 @@ Catering.init(
         underscored: true,
         modelName: 'catering',
     }
+
 );
 
 //EXPORT

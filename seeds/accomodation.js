@@ -7,7 +7,8 @@ const accomodationData =
       accommodation_place: "Cozy Cottage",
       accommodation_description: "A charming cottage surrounded by nature, perfect for a peaceful getaway.",
       accommodation_location: "Forestville, California",
-      price: 1200
+      price: 1200,
+      trending_id:2,
     },
     {
       accommodation_place: "Luxury Villa",
@@ -19,7 +20,8 @@ const accomodationData =
       accommodation_place: "Modern Apartment",
       accommodation_description: "A sleek and stylish apartment in the heart of the city, close to all amenities.",
       accommodation_location: "New York City, New York",
-      price: 2000
+      price: 2000,
+      trending_id:2,
     },
     {
       accommodation_place: "Rustic Cabin",
