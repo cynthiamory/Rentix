@@ -13,7 +13,7 @@ Accomodation.init(
       primaryKey: true,
       autoIncrement: true
     },
-    accommodation_place: {
+      accommodation_place: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -31,9 +31,6 @@ Accomodation.init(
         type: DataTypes.INTEGER,
         allowNull: false,
         
-    },filename: {
-      type: DataTypes.STRING,
-      allowNull: false,
     },
     trending_id: {
       type: DataTypes.INTEGER,
@@ -42,7 +39,8 @@ Accomodation.init(
           key: 'id',
       },
   },
-    },
+
+   
   
   {
     sequelize,

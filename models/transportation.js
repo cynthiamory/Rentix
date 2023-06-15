@@ -32,17 +32,19 @@ Transportation.init(
             allowNull: false,
 
         },
+
         filename: {
             type: DataTypes.STRING,
             allowNull: false,
           },
         trending_id: {
+
             type: DataTypes.INTEGER,
             references: {
-                model: 'trending',
+                model: 'accomodation',
                 key: 'id',
             },
-        },
+       
     },
 
     {
