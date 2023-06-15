@@ -7,7 +7,7 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
 
 
   let index = 1;
-let sentences = ["Homes","Cars","cater"];
+let sentences = ["Homes!","Cars!","Catering!"];
 let sentIndex = 0;
 
 

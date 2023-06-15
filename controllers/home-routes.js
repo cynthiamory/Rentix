@@ -20,6 +20,7 @@ router.get('/',async (req, res) => {
   })
   // serialize Data
   const trending =trendingdata.map((trending)=>trending.get({plain:true}));
+  console.log(trending)
 
   res.render('homepage',{
     trending
