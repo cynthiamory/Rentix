@@ -32,38 +32,35 @@ router.get('/',async (req, res) => {
     res.status(500).json(err);
   }});
 
-// router.get('/:id', (req, res) => {
-//   // find one trending by its `id` value
-//   // be sure to include its associated Products
-//   Trending.findOne({
-//     where: {
-//       id: req.params.id
-//     }, 
+router.get('/:id',async (req, res) => {
+  // find one trending by its `id` value
+  // be sure to include its associated Products
+  try{
+   const trend =await Trending.findByPk(req.params.id,{
   
-//     include: [ 
-//       {
-//         model: Catering
-//       },
-//       {
-//         model: Transportation
-//       },
-//       {
-//         model: Accomodation
-//       },
-//     ]
-//   })
-//   .then(trendingData => {
-//     if (!trendingData) {
-//       res.status(404).json({ message: 'No trending found with this id' });
-//       return;
-//     }
-//     res.json(trendingData);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//     res.status(500).json(err);
-//   });
-// });
+    include: [ 
+      // {
+      //   model: Catering
+      // },
+      // {
+      //   model: Transportation
+      // },
+      // {
+      //   model: Accomodation
+      // },
+    ]
+  });
+
+  res.render('trending',{
+    trend,
+
+    username: req.session.username,
+    logged_in: req.session.logged_in
+  })
+}catch(err) {
+    console.log(err);
+    res.status(500).json(err);
+  }});
 
 // //CREATE
 // router.post('/', (req, res) => {
