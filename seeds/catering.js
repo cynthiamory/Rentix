@@ -8,7 +8,7 @@ const cateringData = [
     menu: "Main Course",
     price: 100,
     trending_id: 1,
-    filename:"homepage.png"
+    filename:"chicken-curry.png"
 
   },
   {
@@ -17,7 +17,7 @@ const cateringData = [
     menu: "Vegetarian",
     price: 80,
     trending_id: 2,
-    filename:"homepage.png"
+    filename:"vegetable-stir-fry.png"
   },
   {
     dish_name: "Beef Stroganoff",
@@ -25,7 +25,7 @@ const cateringData = [
     menu: "Main Course",
     price: 120,
     trending_id: 3,
-    filename:"homepage.png"
+    filename:"beef-stroganoff.png"
 
   },
   {
@@ -34,7 +34,7 @@ const cateringData = [
     menu: "Appetizer",
     price: 60,
     trending_id: 4,
-    filename:"homepage.png"
+    filename:"caprese-salad.png"
   },
   {
     dish_name: "Chocolate Mousse",
@@ -42,7 +42,7 @@ const cateringData = [
     menu: "Dessert",
     price: 70,
     trending_id: 5,
-    filename:"homepage.png"
+    filename:"chocolate-mousse.png"
   },
   {
     dish_name: "Mediterranean Pasta",
@@ -50,7 +50,7 @@ const cateringData = [
     menu: "Main Course",
     price: 90,
     trending_id: 6,
-    filename:"homepage.png"
+    filename:"mediterranean-pasta.png"
   },
   {
     dish_name: "Spinach and Feta Stuffed Mushrooms",
@@ -58,7 +58,7 @@ const cateringData = [
     menu: "Appetizer",
     price: 75,
     trending_id: 7,
-    filename:"homepage.png"
+    filename:"spinach-feta-stuffed-mushrooms.png"
   },
   {
     dish_name: "Lemon Garlic Shrimp",
@@ -66,7 +66,7 @@ const cateringData = [
     menu: "Seafood",
     price: 150,
     trending_id: 8,
-    filename:"homepage.png"
+    filename:"lemon-garlic-shrimp.png"
   },
   {
     dish_name: "Roasted Vegetable Tart",
@@ -74,7 +74,7 @@ const cateringData = [
     menu: "Vegetarian",
     price: 100,
     trending_id: 9,
-    filename:"homepage.png"
+    filename:"roasted-vegetable-tart.png"
   },
   {
     dish_name: "Tiramisu",
@@ -82,7 +82,7 @@ const cateringData = [
     menu: "Dessert",
     price: 80,
     trending_id: 10,
-    filename:"homepage.png"
+    filename:"tiramisu.png"
   }
 ]
 
