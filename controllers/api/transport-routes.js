@@ -38,17 +38,6 @@ router.get('/',async (req, res) => {
       try{
        const transport =await Transportation.findByPk(req.params.id,{
       
-        include: [ 
-          // {
-          //   model: Catering
-          // },
-          // {
-          //   model: Transportation
-          // },
-          // {
-          //   model: Accomodation
-          // },
-        ]
       });
     
       res.render('transportation',{
