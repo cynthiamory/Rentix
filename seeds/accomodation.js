@@ -7,7 +7,7 @@ const accomodationData =
       accommodation_place: "Cozy Cottage",
       accommodation_description: "A charming cottage surrounded by nature, perfect for a peaceful getaway.",
       accommodation_location: "Forestville, California",
-      accommodation_filename: "homepage.png",
+      accommodation_filename: "cozy_cottage.jpeg",
       price: 1200,
       trending_id:2,
     },
@@ -15,7 +15,7 @@ const accomodationData =
       accommodation_place: "Luxury Villa",
       accommodation_description: "A stunning villa with breathtaking ocean views, ideal for a luxurious vacation.",
       accommodation_location: "Maui, Hawaii",
-      accommodation_filename: "homepage.png",
+      accommodation_filename: "luxury_villa.jpeg",
       price: 5000
     },
     {
@@ -113,7 +113,7 @@ const accomodationData =
     {
       accommodation_place: "Historic Castle",
       accommodation_description: "An enchanting castle with centuries of history, providing a unique and regal experience.",
-      accommodation_location: "Edinburgh, Scotland",
+      accommodation_location: "Edinburgh, toronto",
       accommodation_filename: "homepage.png",
       price: 4000
     },
