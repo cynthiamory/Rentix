@@ -17,33 +17,180 @@
 
 </section>
 
-<h2 class="rentix-main">Popular Residences. </h2>
+<h2 class="rentix-main">Our Services </h2>
+
 <section class="Trending-Section">
 
 
-{{#each trending}}
-
-<div class="cards">
-hello
-
-<p>{{ trending_title}}</p>
-<p>{{trending_description}}</p>
+<div class="Homepage-card">
+<img src="/images/homepage.png" alt="" srcset="">
+  <div class="textBox">
+    <a href="/api/accomodation" class="textHead">Accomodation</a>
+    <span></span>
+    <p class="text price"></p>
+  </div>
 </div>
-
-{{/each}}
-
-
-
+<div class="Homepage-card">
+<img src="/images/homepage.png" alt="" srcset="">
+  <div class="textBox">
+    <a href="/api/transport"class="textHead">Transportation</a>
+    <span></span>
+    <p class="text price"></p>
+  </div>
+</div>
+<div class="Homepage-card">
+<img src="/images/homepage.png" alt="" srcset="">
+  <div class="textBox">
+    <a href="/api/catering"class="textHead">catering</a>
+    <span></span>
+    <p class="text price"></p>
+  </div>
+</div>
 
 </section>
 
+<section class="Car-Rental">
+  <h2>Why Rentix For your Next Roadtrip Adventure?</h2>
+  <p>We have full flexibilty for your needs with 10,000 vehicles in our inventory.</p>
+  <form class = "form-input"action="">
+    <label for="Make">Choose the Make:</label>
+    <select name="cars" id="Make">
+      <option value="volvo">Volvo</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="ford">Ford</option>
+    <option value="toyota">Toyota</option>
+    <option value="honda">Honda</option>
+    <option value="chevrolet">Chevrolet</option>
+    <option value="nissan">Nissan</option>
+    <option value="volkswagen">Volkswagen</option>
+    <option value="hyundai">Hyundai</option>
+    <option value="subaru">Subaru</option>
+    <option value="kia">Kia</option>
+    <option value="mazda">Mazda</option>
+</select>
+  
+        <label for="Model">Choose the Model:</label>
+   <select name="car" id = "Model">
+  <optgroup label="Volvo">
+    <option value="S60">S60</option>
+    <option value="XC40">XC40</option>
+    <option value="XC60">XC60</option>
+    <option value="XC90">XC90</option>
+  </optgroup>
+ 
+  <optgroup label="Mercedes">
+    <option value="C-Class">C-Class</option>
+    <option value="E-Class">E-Class</option>
+    <option value="S-Class">S-Class</option>
+    <option value="GLC">GLC</option>
+    <option value="GLE">GLE</option>
+    <option value="GLS">GLS</option>
+  </optgroup>
+  <optgroup label="Audi">
+    <option value="A3">A3</option>
+    <option value="A4">A4</option>
+    <option value="A6">A6</option>
+    <option value="Q5">Q5</option>
+    <option value="Q7">Q7</option>
+    <option value="Q8">Q8</option>
+  </optgroup>
+  <optgroup label="BMW">
+    <option value="3 Series">3 Series</option>
+    <option value="5 Series">5 Series</option>
+    <option value="X3">X3</option>
+    <option value="X5">X5</option>
+    <option value="X7">X7</option>
+  </optgroup>
+  <optgroup label="Ford">
+    <option value="Mustang">Mustang</option>
+    <option value="Focus">Focus</option>
+    <option value="Fusion">Fusion</option>
+    <option value="Escape">Escape</option>
+    <option value="Explorer">Explorer</option>
+    <option value="F-150">F-150</option>
+  </optgroup>
+  <optgroup label="Toyota">
+    <option value="Camry">Camry</option>
+    <option value="Corolla">Corolla</option>
+    <option value="RAV4">RAV4</option>
+    <option value="Highlander">Highlander</option>
+    <option value="Tacoma">Tacoma</option>
+    <option value="4Runner">4Runner</option>
+  </optgroup>
+  <optgroup label="Honda">
+    <option value="Civic">Civic</option>
+    <option value="Accord">Accord</option>
+    <option value="CR-V">CR-V</option>
+    <option value="Pilot">Pilot</option>
+    <option value="Odyssey">Odyssey</option>
+  </optgroup>
+  <optgroup label="Chevrolet">
+    <option value="Malibu">Malibu</option>
+    <option value="Camaro">Camaro</option>
+    <option value="Equinox">Equinox</option>
+    <option value="Traverse">Traverse</option>
+    <option value="Silverado">Silverado</option>
+  </optgroup>
+  <optgroup label="Nissan">
+    <option value="Altima">Altima</option>
+    <option value="Maxima">Maxima</option>
+    <option value="Rogue">Rogue</option>
+    <option value="Murano">Murano</option>
+    <option value="Pathfinder">Pathfinder</option>
+  </optgroup>
+  <optgroup label="Volkswagen">
+    <option value="Golf">Golf</option>
+    <option value="Jetta">Jetta</option>
+    <option value="Passat">Passat</option>
+    <option value="Tiguan">Tiguan</option>
+    <option value="Atlas">Atlas</option>
+  </optgroup>
+  <optgroup label="Hyundai">
+    <option value="Elantra">Elantra</option>
+    <option value="Sonata">Sonata</option>
+    <option value="Tucson">Tucson</option>
+    <option value="Santa Fe">Santa Fe</option>
+    <option value="Palisade">Palisade</option>
+  </optgroup>
+  <optgroup label="Subaru">
+    <option value="Impreza">Impreza</option>
+    <option value="Legacy">Legacy</option>
+    <option value="Forester">Forester</option>
+    <option value="Outback">Outback</option>
+    <option value="Ascent">Ascent</option>
+  </optgroup>
+  <optgroup label="Kia">
+    <option value="Optima">Optima</option>
+    <option value="Soul">Soul</option>
+    <option value="Sportage">Sportage</option>
+    <option value="Sorento">Sorento</option>
+    <option value="Telluride">Telluride</option>
+  </optgroup>
+  <optgroup label="Mazda">
+    <option value="Mazda3">Mazda3</option>
+    <option value="Mazda6">Mazda6</option>
+    <option value="CX-5">CX-5</option>
+    <option value="CX-9">CX-9</option>
+    <option value="MX-5 Miata">MX-5 Miata</option>
+  </optgroup>
+</select>
 
+     
+{{!-- 
+  <form  class = "form-input"action=""> --}}
+        <label for="year">Choose the year:</label>
+    <input type="text" id = "year">
+       <label for="Transmission">Transmission Type:</label>
+    <input type="text" id = "Transmission">
+          <label for="fuel">fuel  Type:</label>
+    <input type="text" id = "fuel">
 
+    <input type="submit" value="Submit" id = "submit">
+  </form>
+</section>
+<div class="imges"></div>
 
-
-
-
-
-{{! <span>like..</span> }}
 
 <script src="/js/index.js"></script>

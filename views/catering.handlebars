@@ -1,3 +1,16 @@
-<h5>Catering here !</h5>
+<img class="accomodation-Logo" src="/images/pexels-anna-guerrero-1956974.jpg" alt="" srcset="">
+<h2 class="Acc-Writing">Our Properties</h2>
+<section class="Acc-Main">
 
+    {{#each catering}}
 
+    <div class="Acc-cards">
+        <img class="cards-img" src="/images/Catering-Images/{{ filename}}" alt="">
+        {{!-- <a class="Cards-Title" href="/api/accomodation/{{id}}">{{accommodation_place}}</a>
+
+        <p class="Cards-Location">{{accommodation_location}}</p> --}}
+        <p class="price">$ {{price}}</p>
+    </div>
+
+    {{/each}}
+</section>

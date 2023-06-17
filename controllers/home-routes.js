@@ -1,84 +1,98 @@
 //IMPORT EXPRESS AND MODELS
 const router = require('express').Router();
-const { Accomodation,Transportation,Trending,Catering } = require('../models');
+const sequelize = require("../config/connection")
+const { Accomodation, Transportation, Trending, Catering } = require('../models');
 
+router.get("/",(req,res)=>{
+  res.render("homepage",{
+    logged_in: req.session.logged_in
+  })
+})
 
 // THE TRENDING ENDPOINTS
-router.get('/',async (req, res) => {
-  
-  try{
-    const trendingdata= await Trending.findAll({
-    // include: [ 
-      
-    //   {
-    //     model: Transportation
-    //   },
-    //   {
-    //     model: Accomodation
-    //   },
-    // ]
-  })
-  // serialize Data
-  const trending =trendingdata.map((trending)=>trending.get({plain:true}));
-  console.log(trending)
+// router.get('/', async (req, res) => {
 
-  res.render('homepage',{
-    trending
-    // username: req.session.username,
-    //   logged_in: req.session.logged_in
-  })
-}catch(err) {
-    console.log(err);
-    res.status(500).json(err);
-  }});
+//   try {
+//     const trendingdata = await Trending.findAll({
+//       // include: [ 
 
-router.get('/:id',async (req, res) => {
-  // find one trending by its `id` value
-  // be sure to include its associated Products
-  try{
-   const trend =await Trending.findByPk(req.params.id,{
-  
-    include: [ 
-      // {
-      //   model: Catering
-      // },
-      // {
-      //   model: Transportation
-      // },
-      // {
-      //   model: Accomodation
-      // },
-    ]
-  });
+//       //   {
+//       //     model: Transportation
+//       //   },
+//       //   {
+//       //     model: Accomodation
+//       //   },
+//       // ]
+//     })
+//     // serialize Data
+//     const trending = trendingdata.map((trending) => trending.get({ plain: true }));
+//     console.log(trending)
 
-  res.render('trending',{
-    trend,
+//     res.render('homepage', {
+//       trending
+//       username: req.session.username,
+       
+//     })
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 
-    // username: req.session.username,
-    // logged_in: req.session.logged_in
-  })
-}catch(err) {
-    console.log(err);
-    res.status(500).json(err);
-  }});
+// router.get('/:id', async (req, res) => {
+//   // find one trending by its `id` value
+//   // be sure to include its associated Products
+//   try {
+//     const trend = await Trending.findByPk(req.params.id, {
 
-  //login page
-  router.get('/login', (req, res) => {
-    // If the user is already logged in, redirect to dashboard
-    if (req.session.logged_in) {
-      res.redirect('/');
-      return;
-    }
-  
-    res.render('login');
-  });
-  
-  router.get('/signup', (req, res) => {
-    res.render('signup');
-  });
+//       include: [
+//         // {
+//         //   model: Catering
+//         // },
+//         // {
+//         //   model: Transportation
+//         // },
+//         // {
+//         //   model: Accomodation
+//         // },
+//       ]
+//     });
+
+//     res.render('trending', {
+//       trend,
+
+//       // username: req.session.username,
+//       // logged_in: req.session.logged_in
+//     })
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 
 
 
+router.get("/Contact", (req, res) => {
+  res.render("Contact")
+})
+
+//login page
+router.get('/Login', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
+
+
+
+  res.render('Login');
+});
+router.get('/signup', (req, res) => {
+  res.render('signup');
+});
+
+
+module.exports = router;
 
 
 
@@ -111,7 +125,7 @@ router.get('/:id',async (req, res) => {
 //       });
 // });
 
-// // UPDATE 
+// // UPDATE
 // router.put('/:id', (req, res) => {
 //   // update a trending by its `id` value
 //   Trending.update(
@@ -137,7 +151,7 @@ router.get('/:id',async (req, res) => {
 //     });
 // });
 
-// //DELETE 
+// //DELETE
 // router.delete('/:id', (req, res) => {
 //   // delete a trending by its `id` value
 //   Trending.destroy({
@@ -159,4 +173,4 @@ router.get('/:id',async (req, res) => {
 // });
 
 //EXPORT
-module.exports = router;
+
