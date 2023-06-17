@@ -51,6 +51,23 @@ router.get('/',async (req, res) => {
         res.status(500).json(err);
       }});
     
+      router.post('/',  async (req, res) => {
+        try {
+      
+          const newvehicle = await Transportation.create({
+            transportation_name: req.body.transportation_name,
+            transportation_description: req.body. transportation_description,
+            capacity: req.body.capacity,
+            price:req.body.price,
+            filename:req.body.filename,
+            trending_id:req.body.trending_id
+          });
+      
+          res.status(200).json(newvehicle);
+        } catch (err) {
+          res.status(400).json(err);
+        }
+      });
     
     //EXPORT
 module.exports = router;
