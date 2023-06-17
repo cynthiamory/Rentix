@@ -2,54 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rentix!</title>
- 
-  <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentix!</title>
+
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-<header class="Primary-Header">
+    <header class="Primary-Header">
 
-  <h1 class="logo">Rentix<span></span></h1>
+        <h1 class="logo">Rentix<span></span></h1>
 
-  <nav class="site-nav">
-    <ul>
-      <li><a href="/"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
-      <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
-      <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
-      <li class = "pro"><a href=""><i class="fa fa-envelope site-nav--icon"></i>Profile</a></li>
-      <select name="Profile" id="Profile-Dropdown">
-  <option value="Sign-Up">Sign-Up</option>
-  <option value="Login">LogIn</option>
- 
-</select>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="/"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                <li><a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a></li>
+                <li><a href="/Contact"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+                 
+               {{#if logged_in}}
+                <li><a href="/"><i class="fa fa-envelope site-nav--icon"></i>Post</a></li>
+                {{/if}}
+                <li class="dropdown">
+                    <a href="#">Profile &#8582;</a>
 
-    </ul>
-  </nav>
+                    <ul class="dropdown-content">
+                        <li><a href="/Login" class="nav-link">Register</a></li>
+                        <li><a href="/Login" class="nav-link">LogIn</a></li>
+                    </ul>
 
-  <div class="menu-toggle">
-    <div class="hamburger"></div>
-  </div>
+                </li>
 
-</header>
-{{{body}}}
+            </ul>
+        </nav>
 
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
 
+    </header>
 
-
-
-
-
-
-
-
+    {{{body}}}
 
 
-<footer class="Primary-footer">
 
-         <div class="footer-column">
+
+
+
+
+
+
+
+
+
+    <footer class="Primary-footer">
+
+        <div class="footer-column">
             <ul>
                 <li class="footer-item">
                     <a href="#" class="footer-link">MEMBERSHIP</a>
@@ -74,7 +82,7 @@
 
             </ul>
         </div>
-              <div class="footer-column">
+        <div class="footer-column">
             <ul>
                 <li class="footer-item">
                     <a href="#" class="footer-link">MEMBERSHIP</a>
@@ -99,7 +107,7 @@
 
             </ul>
         </div>
-              <div class="footer-column">
+        <div class="footer-column">
             <ul>
                 <li class="footer-item">
                     <a href="#" class="footer-link">MEMBERSHIP</a>
@@ -124,7 +132,7 @@
 
             </ul>
         </div>
-              <div class="footer-column">
+        <div class="footer-column">
             <ul>
                 <li class="footer-item">
                     <a href="#" class="footer-link">MEMBERSHIP</a>
@@ -151,10 +159,10 @@
         </div>
 
 
-            <div class="News-Letter">
+        <div class="News-Letter">
             <h2 class="footer-letter">Connect With Us!</h2>
             <p>Sign-up for our newsletter to get sneak peak of sales, exclusive deals, and more!</p>
-            <input type="email" class="email" >
+            <input type="email" class="email">
 
             <button class="signup">Sign-up</button>
             {{!-- <div class="Socials">
@@ -165,11 +173,9 @@
 
             </div> --}}
         </div>
-</footer>
-  <!-- Render script for logged in users only -->
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+    </footer>
+  
+  
 </body>
 
 </html>
