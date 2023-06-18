@@ -1,11 +1,13 @@
 //IMPORT EXPRESS AND MODELS
 const router = require('express').Router();
+const withAuth = require('../utils/auth');
 const sequelize = require("../config/connection")
 const { Accomodation, Transportation, Trending, Catering } = require('../models');
 
 router.get("/",(req,res)=>{
   res.render("homepage",{
-    logged_in: req.session.logged_in
+    loggedIn: req.session.loggedIn,
+   
   })
 })
 
@@ -70,15 +72,17 @@ router.get("/",(req,res)=>{
 //   }
 // });
 
+router.get("/product",(req,res)=>{
+  res.render("product")
+})
 
-
-router.get("/Contact", (req, res) => {
+router.get("/Contact", withAuth, (req, res) => {
   res.render("Contact")
 })
 
 //login page
 router.get('/Login', (req, res) => {
-  if (req.session.logged_in) {
+  if (req.session.loggedIn) {
     res.redirect('/profile');
     return;
   }

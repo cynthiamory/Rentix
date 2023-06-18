@@ -1,16 +1,20 @@
 <img class="accomodation-Logo" src="/images/pexels-anna-guerrero-1956974.jpg" alt="" srcset="">
-<h2 class="Acc-Writing">Our Properties</h2>
-<section class="Acc-Main">
-
-    {{#each catering}}
-
-    <div class="Acc-cards">
-        <img class="cards-img" src="/images/Catering-Images/{{ filename}}" alt="">
-        {{!-- <a class="Cards-Title" href="/api/accomodation/{{id}}">{{accommodation_place}}</a>
-
-        <p class="Cards-Location">{{accommodation_location}}</p> --}}
-        <p class="price">$ {{price}}</p>
-    </div>
-
-    {{/each}}
-</section>
+<main class = "Catering-Main">
+    <h2 class="Acc-Writing">Our Pride</h2>
+    <section class="Acc-Main">
+    
+        {{#each catering}}
+    
+        <div class="Acc-cards">
+            <img class="cards-img" src="/images/Catering-Images/{{ filename}}" alt="">
+    
+        </div>
+          <div class = "Acc-Info">
+              <a class="Cards-Title" href="/api/Catering/{{id}}">{{dish_name}}</a>
+                <p class="Cards-Location">{{menu}}</p>
+                <p class="price">$ {{price}}</p>
+          </div>
+    
+        {{/each}}
+    </section>
+</main>

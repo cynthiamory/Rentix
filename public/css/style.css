@@ -2,13 +2,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&family=Montserrat:wght@200;300&display=swap');
 
 
-
-
-
-
-
-
-
 /* Box sizing rules */
 *,
 *::before,
@@ -91,15 +84,81 @@ select {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* Product Description */
+.Container-For{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:70%;
+  margin:2%;
+
+}
+.Product-Description{
+  display: flex;
+  justify-content: space-between;
+flex-direction: column;
+  align-items: Center;
+  border:1px solid black;
+  margin:2%;
+width:70%;
+
+}
+.Image-Content{
+  width:50%;
+  height:100%
+}
+.Specs-For{
+  text-align: center;
+  text-decoration: underline;
+}
+.Car-Specs{
+  text-align: center;
+ 
+  justify-content: center;
+  border:1px solid black;
+  padding: 1rem;
+
+  width:100%
+}
+.des{
+  text-align: start;
+
+  padding:0.2rem;
+  margin:0.2rem;
+  font-weight:600
+}
+.Date{
+  text-align: center;
+
+  border:1px solid black;
+  width:100%
+}
 /*  */
+
+
+/* Login/signup */
 .container{
   display: flex;
   height:80vh;
   justify-content: space-evenly;
   align-items: center;
-  /* margin:2%; */
   background-image:url("../images/pexels-faris-7992270.jpg");
-
   background-position:center;
   background-repeat: repeat;
   background-size: cover;
@@ -222,15 +281,15 @@ height: 60vh;
   background-color: rgb(0, 0, 0);
   color: white;
 }
-/*  */
+/*END  */
 
-
+/* Primary-Nav */
 
 .Primary-Header{
 display:flex;
 justify-content: space-around;
 background-color: #30392f;
-color: aliceblue;
+color: #EBEBD3;
 
 
 }
@@ -248,8 +307,6 @@ color: aliceblue;
 .site-nav--icon {
   display: inline-block;
   font-size: 1.5em;
-
-  /* width: 1em; */
   text-align: right;
   color: rgba(255,255,255,.4);
 } 
@@ -273,7 +330,6 @@ color: aliceblue;
   display:none;
   background-color: #30392f;
 
-  /* text-align: left; */
   
  
 }
@@ -321,10 +377,10 @@ color: aliceblue;
 .open .hamburger::after {
   transform: translateY(-3px) rotate(-90deg);
 }
+/* End */
 
 
-
-
+/* Hero */
 
 .Hero-Content{
   background-image: url("/images/pexels-asad-photo-maldives-3155666.jpg"); 
@@ -355,9 +411,6 @@ color: aliceblue;
 .Main-Left{
  padding:4rem;
  margin-bottom: 1.5rem;
- /* text-decoration: underline; */
-
-
 
 }
 h2,h3{
@@ -365,11 +418,6 @@ h2,h3{
   font-family: 'Montserrat', sans-serif;
 }
 
- /* img{
-border-radius: 6px;
-object-fit: cover;
-width: 40%;
-} */
 
 .Seach-query{
   border-radius: 4px;
@@ -394,28 +442,23 @@ width: 40%;
   display: flex;
   justify-content: center;
   text-underline-offset: 4px;
-   text-decoration: underline;
+border-bottom: inset;
 
 }
 
-/*  */
+/* End */
+
+/* Trending */
 .Trending-Section{
   display:flex;
+  margin:2%;
   justify-content: space-evenly;
-  /* height:100vh */
+ 
 
 }
-
-
-
-
-
-/*  */
-
 
 .Homepage-card {
   width: 20%;
-  height: 285px;
   background:#30392f;
   border-radius: 20px;
   overflow: hidden;
@@ -423,95 +466,92 @@ width: 40%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #EBEBD3;
   transition: 0.2s ease-in-out;
 }
 .textHead{
-  color: white;
-  text-decoration: none;
+  color: #EBEBD3;
+border-bottom: inset;
+font-weight: 600;
+margin:0.5rem;
 }
 img {
   height: 100%;
+  width:100%;
   object-fit: cover;
-
-  /* position: absolute; */
   transition: 0.2s ease-in-out;
-  z-index: 1;
+  
 }
 
 .textBox {
-  opacity: 0;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  gap: 15px;
   transition: 0.2s ease-in-out;
-  z-index: 2;
+ 
 }
 
-.textBox > .text {
-  font-weight: bold;
-}
+/* End */
 
-.textBox > .head {
-  font-size: 20px;
-}
 
-.textBox > .price {
-  font-size: 17px;
-}
 
-.textBox > span {
-  font-size: 12px;
-  color: lightgrey;
-}
-
-.Homepage-card:hover > .textBox {
-  opacity: 1;
-}
-
-.Homepage-card:hover > img {
-  /* height: 65%; */
-  filter: blur(4px);
-  animation: anim 3s infinite;
-}
-
-@keyframes anim {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* .Homepage-card:hover {
-  transform: scale(1.04) rotate(-1deg);
-} */
-
-/*  */
+/* Car-Rental */
 
 .Car-Rental{
   display:flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
-  border:1px solid black;
+  height:50vh;
+  background-image: url("../images/pexels-taryn-elliott-6861140.jpg");
+  background-position: center;
+  background-size: cover;
+color:#EBEBD3;
+overflow: hidden;
   margin:2%;
 
 }
-input{
-  /* padding:0.5rem; */
-  margin:0.5rem;
+.Look{
+  border-right: inset;
+  margin:1%;
+
 }
-/*  */
+.Look-Para{
+  font-size:1.2rem;
+  font-weight: 500;
+}
+label{
+  text-decoration: underline;
+  color:white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+input{
+  margin:0.5rem;
+  border: none;
+}
+.form-input{
+  border: 1px solid black;
+  
+}
+.Take-Me{
+  padding:0.5rem 2rem;
+  color:rgb(218, 218, 218);
+  text-decoration: none;
+  background: #30392f;
+}
+/* End */
+
+
+
 /* acc */
+.Accomodation-Main{
+  background-color: #bbbbb3;
+}
+.Catering-Main{
+  background-color: #bbbbb3;
+}
 .accomodation-Logo{
   object-fit: cover;
   width:100%;
@@ -521,20 +561,33 @@ input{
   display: flex;
   justify-content: center;
   align-items: center;
+
   flex-wrap:wrap;
 
 }
 .Acc-cards{
-  height:390px;
-  width:10%;
-  border:1px solid black;
+  flex: 0 0 15%;
+  height:300px;
+  width:15%;
+ 
+  /* border:1px solid black; */
   border-radius: 10px;
   margin:2%;
  text-align: center;
+
+}
+.Acc-Info{
+  flex: 0 0 10%;
+}
+.cards-img {
  overflow: hidden;
+ height: 100%;
+ width: 100%;
+ border-radius: 10px;
 }
 .Acc-Writing{
   display:flex;
+  border-bottom: inset;
   justify-content: center;
 }
 .Cards-Title{
@@ -542,6 +595,10 @@ input{
   color: black;
   font-size:1.2rem;
   font-weight: 600;
+}
+.pin{
+  width:1rem;
+  aspect-ratio: 1;
 }
 .price{
   font-weight: bold;
@@ -554,24 +611,43 @@ input{
   height: 60vh;
 }
 
-.trans-Writing{
-  display:flex;
-  justify-content: center;
-}
-.trans-Main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap:wrap;
-}
-.Trans-Cards{
-  /* height:340px; */
-  width:10%;
-  border:1px solid black;
-  border-radius: 10px;
+
+/*  */
+
+.Wrap-Contact{
   margin:2%;
- text-align: center;
+  background-color:#30392f;
+  display:flex;
+  justify-content: space-around;
 }
+.Contactus{
+ 
+  margin-inline:2%;
+
+  width:50%;
+}
+ iframe{
+width:50%;
+}
+.contact-form{
+  display:flex;
+  flex-direction: column;
+
+}
+.contact-submit-btn{
+/* padding: 0%; */
+width:20%;
+
+}
+.contact-form>label{
+  font-weight: 300;
+  text-decoration: none;
+  color:#EBEBD3;
+  padding:0.5rem;
+}
+
+
+/*  */
 
 /*  */
 .Primary-footer{
@@ -579,7 +655,7 @@ input{
   flex-wrap: wrap;
   background-color: #30392f;
   justify-content: space-around;
-color: aliceblue;
+color: #EBEBD3;
 width:100%;
 
 }

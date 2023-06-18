@@ -1,15 +1,23 @@
 <img  class = "transportation-Logo"src="/images/pexels-julia-volk-5207636.jpg" alt="" srcset="">
-<h2 class="trans-Writing">Whip To Rip!</h2>
 
-<section class="trans-Main">
-
-{{#each transport}}
-
-<div class="Trans-Cards">
-<img  class = "cards-img"src="/images/pexels-adrian-dorobantu-2127732.jpg" alt="">
-  <a href="/api/transport/{{id}}" class="Cards-Title">{{transportation_name}}</a>
-  <p>{{capacity}}</p>
-  <p>{{price}}</p>
-</div>
-{{/each}}
-</section>
+<main class ="Accomodation-Main">
+    
+    <h2 class = "Acc-Writing">Our Collection</h2>
+    <section class = "Acc-Main">
+    
+        {{#each transport}}
+    
+        <div class = "Acc-cards">
+             <img  class = "cards-img"src="/images/Transportation/{{ filename}}" alt="A Picture of {{transportation_name}}">
+    
+        </div>
+         <div class = "Acc-Info">
+                <a class = "Cards-Title" href = "/api/transport/{{id}}">{{transportation_name}}</a>
+    
+                <p class = "Cards-Location"><span><img class = "pin"src="/images/car-seat.png" alt="" srcset=""></span>{{ capacity}}</p>
+                <p class = "price">$ {{price}} A Night</p>
+            </div>
+    
+        {{/each}}
+    </section>
+</main>

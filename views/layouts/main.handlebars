@@ -19,16 +19,29 @@
                 <li><a href="/"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
                 <li><a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a></li>
                 <li><a href="/Contact"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
-                 
-               {{#if logged_in}}
-                <li><a href="/"><i class="fa fa-envelope site-nav--icon"></i>Post</a></li>
+
+                {{#if loggedIn}}
+                <li class="dropdown"><a href="/"><i class="fa fa-envelope site-nav--icon"></i>Post</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="/Login" class="nav-link">Post your car</a></li>
+                        <li><a href="/Login" class="nav-link">Post Accomodation</a></li>
+                    </ul>
+
+                </li>
                 {{/if}}
                 <li class="dropdown">
                     <a href="#">Profile &#8582;</a>
 
                     <ul class="dropdown-content">
                         <li><a href="/Login" class="nav-link">Register</a></li>
+
+                        {{#if loggedIn}}
+                        <li><a href="/logout" id="logout" class="nav-link">Logout</a></li>
+                        {{else}}
                         <li><a href="/Login" class="nav-link">LogIn</a></li>
+                        {{/if}}
+
                     </ul>
 
                 </li>
@@ -174,8 +187,11 @@
             </div> --}}
         </div>
     </footer>
-  
-  
+
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+
 </body>
 
 </html>
