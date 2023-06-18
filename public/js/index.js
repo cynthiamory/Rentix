@@ -50,6 +50,8 @@ async function getModels(event) {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
+    const cClass = result.class;
+    console.log(cClass )
 
     console.log(result);
    
@@ -68,19 +70,13 @@ async function getModels(event) {
     const pexelsResult = await pexelsResponse.json();
     const imageUrl = pexelsResult.photos[0].src.original;
 
-    
-    const imgTag = document.createElement('img');
-    imgTag.src = imageUrl;
-    imgTag.alt = 'Description of the image';
-
-    const here = document.querySelector(".imges")
-    here.appendChild(imgTag);
+  
     
   } catch (error) {
     console.error(error);
   }
 }
 
-document.querySelector('.form-input').addEventListener('submit', getModels);
+document.querySelector('.Take-Me').addEventListener('click', getModels);
 
 // 

@@ -1,16 +1,23 @@
 <img class = "accomodation-Logo" src="/images/lawrence-chismorie-6fE0xjiZvrs-unsplash.jpg" alt="" srcset="">
-<h2 class = "Acc-Writing">Our Properties</h2>
-<section class = "Acc-Main">
 
-    {{#each Accomodationserial}}
-
-    <div class = "Acc-cards">
-         <img  class = "cards-img"src="/images/Accomadation/{{accommodation_filename}}" alt="">
-        <a class = "Cards-Title" href = "/api/accomodation/{{id}}">{{accommodation_place}}</a>
-        
-        <p class = "Cards-Location">{{accommodation_location}}</p>
-        <p class = "price">$ {{price}}</p>
-    </div>
-
-    {{/each}}
-</section>
+<main class ="Accomodation-Main">
+    
+    <h2 class = "Acc-Writing">Our Properties</h2>
+    <section class = "Acc-Main">
+    
+        {{#each Accomodationserial}}
+    
+        <div class = "Acc-cards">
+             <img  class = "cards-img"src="/images/Accomadation/{{accommodation_filename}}" alt="">
+    
+        </div>
+         <div class = "Acc-Info">
+                <a class = "Cards-Title" href = "/api/accomodation/{{id}}">{{accommodation_place}}</a>
+    
+                <p class = "Cards-Location"><span><img class = "pin"src="/images/pin.png" alt="" srcset=""></span>{{accommodation_location}}</p>
+                <p class = "price">$ {{price}}</p>
+            </div>
+    
+        {{/each}}
+    </section>
+</main>

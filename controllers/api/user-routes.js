@@ -12,6 +12,7 @@ const userData = await User.create({
 })
 req.session.save(() => {
     req.session.loggedIn = true;
+    
 
     res.status(200).json(userData);
   });

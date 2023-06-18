@@ -1,5 +1,6 @@
 //IMPORT EXPRESS AND MODELS
 const router = require('express').Router();
+
 const { Accomodation,Transportation,Trending, Catering } = require('../../models');
 
 // THE CATERING ENDPOINTS
