@@ -7,19 +7,7 @@ const { Accomodation,Transportation,Trending, Catering } = require('../../models
 router.get('/',async (req, res) => {
     
     try{
-      const transportationdata= await Transportation.findAll({
-      include: [ 
-        // {
-        //   model: Catering
-        // },
-        // {
-        //   model: Transportation
-        // },
-        // {
-        //   model: Accomodation
-        // },
-      ]
-    })
+      const transportationdata= await Transportation.findAll()
     // serialize Data
     const transport =transportationdata.map((transportation)=>transportation.get({plain:true}));
   
@@ -41,8 +29,10 @@ router.get('/',async (req, res) => {
       
       });
     
+          const transportserial =transport.get({plain:true})
+    console.log(transportserial)
       res.render('transportation',{
-        transport,
+        transportserial,
     
         // username: req.session.username,
         // logged_in: req.session.logged_in
