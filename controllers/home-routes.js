@@ -11,79 +11,26 @@ router.get("/",(req,res)=>{
   })
 })
 
-// THE TRENDING ENDPOINTS
-// router.get('/', async (req, res) => {
-
-//   try {
-//     const trendingdata = await Trending.findAll({
-//       // include: [ 
-
-//       //   {
-//       //     model: Transportation
-//       //   },
-//       //   {
-//       //     model: Accomodation
-//       //   },
-//       // ]
-//     })
-//     // serialize Data
-//     const trending = trendingdata.map((trending) => trending.get({ plain: true }));
-//     console.log(trending)
-
-//     res.render('homepage', {
-//       trending
-//       username: req.session.username,
-       
-//     })
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
-
-// router.get('/:id', async (req, res) => {
-//   // find one trending by its `id` value
-//   // be sure to include its associated Products
-//   try {
-//     const trend = await Trending.findByPk(req.params.id, {
-
-//       include: [
-//         // {
-//         //   model: Catering
-//         // },
-//         // {
-//         //   model: Transportation
-//         // },
-//         // {
-//         //   model: Accomodation
-//         // },
-//       ]
-//     });
-
-//     res.render('trending', {
-//       trend,
-
-//       // username: req.session.username,
-//       // logged_in: req.session.logged_in
-//     })
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
-
-router.get("/product",(req,res)=>{
-  res.render("product")
+router.get("/uploadTran",(req,res)=>{
+  res.render("uploadTran")
 })
 
-router.get("/Contact", withAuth, (req, res) => {
+router.get("/uploadAcc",(req,res)=>{
+  res.render("uploadAcc")
+})
+
+router.get('/product', async (req, res) => {
+  res.render('product');
+});
+
+router.get("/Contact",   (req, res) => {
   res.render("Contact")
 })
 
 //login page
 router.get('/Login', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/profile');
+    res.redirect('/');
     return;
   }
 
@@ -91,9 +38,7 @@ router.get('/Login', (req, res) => {
 
   res.render('Login');
 });
-router.get('/signup', (req, res) => {
-  res.render('signup');
-});
+
 
 
 module.exports = router;

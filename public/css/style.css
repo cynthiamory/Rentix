@@ -82,59 +82,158 @@ select {
 }
 
 
+/* Upload Acc */
+.Upload-Acc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
+/*  */
 
+/* About */
+.About-Section{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#666e6d;
+ 
 
+}
+.About-Main{
+  display:flex;
 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:60%;
+  margin:2%;
+  color: #EBEBD3;
+  /* border:1px solid black; */
+}
+.logo-span{
+  color: black
+}
+.list-logo{
+  display: flex;
+  margin:1%;
+  width:2rem;
+  
+  aspect-ratio: 1;
+}
+.wrap-About{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* border:1px solid black; */
+ 
+  
+}
 
+.About-para{
+  flex:1;
+  border-right: inset;
+  margin-inline: 1%;
+  font-weight: 600;
+  line-break:normal;
+  text-align: center;
+}
+.list-div>ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
 
+.list-div{
+  flex:0;
+  font-weight: 600;
+  border-right: inset;
+  margin-inline: 1%;
+}
+.About-div{
+  flex:1;
+}
+.About-div>img{
+  overflow: hidden;
+  object-fit: cover;
+  width:70%;
+  aspect-ratio: 1;
 
-
-
+}
 
 
 
 /* Product Description */
-.Container-For{
-  display:flex;
+.selection{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.wrapper{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:70%;
-  margin:2%;
 
+.des> span {
+  text-transform: uppercase;
+  padding:0.8rem;
+  
 }
+
+
+
+
 .Product-Description{
   display: flex;
   justify-content: space-between;
+  background-color: #30392f;
+  color: #EBEBD3;
 flex-direction: column;
   align-items: Center;
   border:1px solid black;
   margin:2%;
-width:70%;
+width:40%;
 
 }
 .Image-Content{
+  margin:2%;
   width:50%;
-  height:100%
+  height:80%
+}
+.Container-For{
+  display:flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-main{
+  margin:2%;
+  border:1px solid black
+}
+.wrapper{
+  display:flex;
+  border:1px solid black;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+  width:70%;
+  margin:2%;
+
 }
 .Specs-For{
   text-align: center;
+  text-transform: capitalize;
   text-decoration: underline;
+  /* border:1px solid black; */
 }
 .Car-Specs{
   text-align: center;
- 
+ border-bottom:inset;
   justify-content: center;
-  border:1px solid black;
+  /* border:1px solid black; */
   padding: 1rem;
-
-  width:100%
+margin:1%;
+  width:60%
 }
 .des{
   text-align: start;
@@ -144,10 +243,32 @@ width:70%;
   font-weight:600
 }
 .Date{
+  background-color:dodgerblue;
+  display: flex;
   text-align: center;
-
+  padding:2rem;
+flex-direction: column;
   border:1px solid black;
-  width:100%
+  width:60%
+}
+.Date>input{
+  padding:0.8rem;
+  border:none;
+  border-radius: 6px;
+}
+.Date>label{
+  font-weight:600
+}
+#continue-Cart{
+  background-color: #30392f;
+  margin:1%;
+  border: none;
+  color: #EBEBD3;
+}
+#getSelection{
+  background-color: #30392f;
+  border: none;
+  color: #EBEBD3;
 }
 /*  */
 
@@ -158,7 +279,7 @@ width:70%;
   height:80vh;
   justify-content: space-evenly;
   align-items: center;
-  background-image:url("../images/pexels-faris-7992270.jpg");
+  background-image:url("../images/pexels-mariam-antadze-5914308.jpg");
   background-position:center;
   background-repeat: repeat;
   background-size: cover;
@@ -293,6 +414,11 @@ color: #EBEBD3;
 
 
 }
+.logo{
+
+text-decoration: none;
+color: #EBEBD3;
+}
 
 .site-nav a {
   color: #EBEBD3;
@@ -315,27 +441,34 @@ color: #EBEBD3;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
  
 }
 .dropdown:hover .dropdown-content{
-  display:inline;
-  margin:0;
-  padding:0;
+  display:block;
+  text-align: start;
+border-radius: 0 0  0 100px;
+  margin:0.6rem;
+  padding:0.5rem;
   margin-top:1%;
+  background-color: #30392f;
 }
 
 .dropdown-content{
   position: absolute;
+  left:0;
+  font-size: 1em;
   display:none;
-  background-color: #30392f;
+
 
   
  
 }
 
 .dropdown-content li a{
-  width:100%;
+  /* width:40%; */
+  border-bottom: inset;
+  
 }
 
 .menu-toggle {
@@ -501,8 +634,9 @@ img {
 
 .Car-Rental{
   display:flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
   height:50vh;
   background-image: url("../images/pexels-taryn-elliott-6861140.jpg");
   background-position: center;
@@ -521,24 +655,13 @@ overflow: hidden;
   font-size:1.2rem;
   font-weight: 500;
 }
-label{
-  text-decoration: underline;
-  color:white;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-input{
-  margin:0.5rem;
-  border: none;
-}
-.form-input{
-  border: 1px solid black;
-  
-}
+
 .Take-Me{
-  padding:0.5rem 2rem;
+  padding:0.5rem 8rem;
+  border-bottom: inset;
+  margin:1rem;
   color:rgb(218, 218, 218);
-  text-decoration: none;
+
   background: #30392f;
 }
 /* End */
