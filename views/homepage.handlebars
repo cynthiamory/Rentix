@@ -2,17 +2,38 @@
 
   <aside class="Main-Left">
 
-    <h3 class="rentix">Choose Rentix for Your Next <span><input type="text" id="inputID" /></span> </h3>
+    <h3 class="rentix">Choose RentiX for Your Next <span><input type="text" id="inputID" /></span> </h3>
     <p class="rentix-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, obcaecati?</p>
 
-    <input type="search" class="Seach-query" value="Las Vegas">
-    <input type="submit" class="submit-btn"></input>
+    {{!-- <input type="search" class="Seach-query" value="Las Vegas">
+    <input type="submit" class="submit-btn"></input> --}}
 
 
   </aside>
 
 
 
+</section>
+<section class = "About-Section">
+  <main class = "About-Main">
+  
+    <h2 class ="About-Logo" >About <span class="logo-span">RentiX</span></h2>
+    <div class = "wrap-About">
+      <p class ="About-para" > We are your premier destination for all your event and rental needs. We specialize in transforming ordinary spaces into extraordinary experiences, bringing your vision to life with our extensive collection of top-quality event rentals and catering.
+      Whether you're planning an intimate gathering, a corporate event, a wedding, or a grand celebration, we have everything you need to create an ambiance that leaves a lasting impression. From catering, a space to stay and even your form of transportation.</p>
+   <div class = "list-div">
+     <ul>
+      <li class ="list-list"><img class = "list-logo"src="/images/reliability.png" alt="" srcset="">Reliable</li>
+      <li class ="list-list"><img class = "list-logo" src="/images/clock.png" alt="" srcset="">Fast</li>
+      <li class ="list-list"><img class = "list-logo" src="/images/efficacy.png" alt="" srcset="">Efficient</li>
+     
+     </ul>
+   </div>
+  
+   <div class = "About-div"><img class = "about-img" src="/images/2.png" alt="" srcset=""></div>
+  
+    </div>
+  </main>
 </section>
 
 <h2 class="rentix-main">Our Services </h2>
@@ -24,7 +45,7 @@
     <img src="/images/pexels-ryutaro-tsukata-5745816.jpg" alt="" srcset="">
     <div class="textBox">
       <a href="/api/accomodation" class="textHead">Accomodation &rarrtl;</a>
-      <span class="Card-Sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem..</span>
+      <span class="Card-Sub">Our wide range of accommodations caters to various preferences and budgets, ensuring that you can find the ideal option for your needs. </span>
 
     </div>
   </div>
@@ -34,7 +55,7 @@
     <img src="/images/pexels-scott-webb-174752.jpg" alt="" srcset="">
     <div class="textBox">
       <a href="/api/transport" class="textHead">Transportation &rarrtl;</a>
-      <span class="Card-Sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem.
+      <span class="Card-Sub">Whether you're looking for a one-way transfer or require transportation for the duration of your stay, we have flexible options to accommodate your schedule.
       </span>
 
     </div>
@@ -46,7 +67,7 @@
     <img src="/images/pexels-mat-brown-1395967.jpg" alt="" srcset="">
     <div class="textBox">
       <a href="/api/catering" class="textHead">Catering &rarrtl;</a>
-      <span class="Card-Sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatem.</span>
+      <span class="Card-Sub">Our team will handle all aspects of the catering, including setup, food service, and clean-up, allowing you to relax and enjoy the occasion alongside your guests.</span>
 
 
     </div>
@@ -58,149 +79,16 @@
   <section class="Car-Rental">
 
     <div class="Look">
-      <h2>Why Rentix For your Next Roadtrip Adventure?</h2>
+      <h2>Why RentiX For your Next <br>Roadtrip Adventure?</h2>
       <p class="Look-Para">We have full flexibilty for your needs with over 10,000 vehicles in our inventory.</p>
     </div>
-    <form class="form-input" action="">
-      <label for="Make">Make:</label>
-      <select name="cars" id="Make">
-        <option value="volvo">Volvo</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-        <option value="bmw">BMW</option>
-        <option value="ford">Ford</option>
-        <option value="toyota">Toyota</option>
-        <option value="honda">Honda</option>
-        <option value="chevrolet">Chevrolet</option>
-        <option value="nissan">Nissan</option>
-        <option value="volkswagen">Volkswagen</option>
-        <option value="hyundai">Hyundai</option>
-        <option value="subaru">Subaru</option>
-        <option value="kia">Kia</option>
-        <option value="mazda">Mazda</option>
-      </select>
-
-      <label for="Model"> Model:</label>
-      <select name="car" id="Model">
-        <optgroup label="Volvo">
-          <option value="S60">S60</option>
-          <option value="XC40">XC40</option>
-          <option value="XC60">XC60</option>
-          <option value="XC90">XC90</option>
-        </optgroup>
-
-        <optgroup label="Mercedes">
-          <option value="C-Class">C-Class</option>
-          <option value="E-Class">E-Class</option>
-          <option value="S-Class">S-Class</option>
-          <option value="GLC">GLC</option>
-          <option value="GLE">GLE</option>
-          <option value="GLS">GLS</option>
-        </optgroup>
-        <optgroup label="Audi">
-          <option value="A3">A3</option>
-          <option value="A4">A4</option>
-          <option value="A6">A6</option>
-          <option value="Q5">Q5</option>
-          <option value="Q7">Q7</option>
-          <option value="Q8">Q8</option>
-        </optgroup>
-        <optgroup label="BMW">
-          <option value="3 Series">3 Series</option>
-          <option value="5 Series">5 Series</option>
-          <option value="X3">X3</option>
-          <option value="X5">X5</option>
-          <option value="X7">X7</option>
-        </optgroup>
-        <optgroup label="Ford">
-          <option value="Mustang">Mustang</option>
-          <option value="Focus">Focus</option>
-          <option value="Fusion">Fusion</option>
-          <option value="Escape">Escape</option>
-          <option value="Explorer">Explorer</option>
-          <option value="F-150">F-150</option>
-        </optgroup>
-        <optgroup label="Toyota">
-          <option value="Camry">Camry</option>
-          <option value="Corolla">Corolla</option>
-          <option value="RAV4">RAV4</option>
-          <option value="Highlander">Highlander</option>
-          <option value="Tacoma">Tacoma</option>
-          <option value="4Runner">4Runner</option>
-        </optgroup>
-        <optgroup label="Honda">
-          <option value="Civic">Civic</option>
-          <option value="Accord">Accord</option>
-          <option value="CR-V">CR-V</option>
-          <option value="Pilot">Pilot</option>
-          <option value="Odyssey">Odyssey</option>
-        </optgroup>
-        <optgroup label="Chevrolet">
-          <option value="Malibu">Malibu</option>
-          <option value="Camaro">Camaro</option>
-          <option value="Equinox">Equinox</option>
-          <option value="Traverse">Traverse</option>
-          <option value="Silverado">Silverado</option>
-        </optgroup>
-        <optgroup label="Nissan">
-          <option value="Altima">Altima</option>
-          <option value="Maxima">Maxima</option>
-          <option value="Rogue">Rogue</option>
-          <option value="Murano">Murano</option>
-          <option value="Pathfinder">Pathfinder</option>
-        </optgroup>
-        <optgroup label="Volkswagen">
-          <option value="Golf">Golf</option>
-          <option value="Jetta">Jetta</option>
-          <option value="Passat">Passat</option>
-          <option value="Tiguan">Tiguan</option>
-          <option value="Atlas">Atlas</option>
-        </optgroup>
-        <optgroup label="Hyundai">
-          <option value="Elantra">Elantra</option>
-          <option value="Sonata">Sonata</option>
-          <option value="Tucson">Tucson</option>
-          <option value="Santa Fe">Santa Fe</option>
-          <option value="Palisade">Palisade</option>
-        </optgroup>
-        <optgroup label="Subaru">
-          <option value="Impreza">Impreza</option>
-          <option value="Legacy">Legacy</option>
-          <option value="Forester">Forester</option>
-          <option value="Outback">Outback</option>
-          <option value="Ascent">Ascent</option>
-        </optgroup>
-        <optgroup label="Kia">
-          <option value="Optima">Optima</option>
-          <option value="Soul">Soul</option>
-          <option value="Sportage">Sportage</option>
-          <option value="Sorento">Sorento</option>
-          <option value="Telluride">Telluride</option>
-        </optgroup>
-        <optgroup label="Mazda">
-          <option value="Mazda3">Mazda3</option>
-          <option value="Mazda6">Mazda6</option>
-          <option value="CX-5">CX-5</option>
-          <option value="CX-9">CX-9</option>
-          <option value="MX-5 Miata">MX-5 Miata</option>
-        </optgroup>
-      </select>
-
-      <label for="year">Year:</label>
-      <input type="text" id="year">
-      <label for="Transmission">Transmission Type:</label>
-      <input type="text" id="Transmission">
-      <label for="fuel">Fuel Type:</label>
-      <input type="text" id="fuel">
-
-
+      <a  class="Take-Me" href = "/product" >Find Out  &rarrtl;</a>
+   
   
-      <a  class="Take-Me" >Find</a>
-    </form>
   </section>
 </div>
 
-
+{{!-- href = "/product" --}}
 
 
 <main>

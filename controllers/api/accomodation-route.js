@@ -58,10 +58,10 @@ router.get('/',async (req, res) => {
         try {
       
           const newplace = await Accomodation.create({
-            accommodation_place:req.body.accomodation_place ,
-            accommodation_description:req.body.accomodation_description ,
-            accommodation_location:req.body.accomodation_location,
-            accommodation_filename:req.body.accomodation_filename,
+            accommodation_place:req.body.accommodation_place,
+            accommodation_description:req.body.accommodation_description ,
+            accommodation_location:req.body.accommodation_location,
+            accommodation_filename:req.body.accommodation_filename,
             price:req.body.price ,
             trending_id:req.body.trending_id,
           });

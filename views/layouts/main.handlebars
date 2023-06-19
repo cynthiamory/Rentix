@@ -12,7 +12,9 @@
 <body>
     <header class="Primary-Header">
 
-        <h1 class="logo">Rentix<span></span></h1>
+        <a href="/">
+            <h1 class="logo">Rentix</h1>
+        </a>
 
         <nav class="site-nav">
             <ul>
@@ -21,11 +23,11 @@
                 <li><a href="/Contact"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
 
                 {{#if loggedIn}}
-                <li class="dropdown"><a href="/"><i class="fa fa-envelope site-nav--icon"></i>Post</a>
+                <li class="dropdown"><a href="/uploadTran"><i class="fa fa-envelope site-nav--icon"></i>Post &#8582;</a>
 
                     <ul class="dropdown-content">
-                        <li><a href="/Login" class="nav-link">Post your car</a></li>
-                        <li><a href="/Login" class="nav-link">Post Accomodation</a></li>
+                        <li><a href="/uploadTran" class="nav-link">Car</a></li>
+                        <li><a href="/uploadAcc" class="nav-link">Accomodation</a></li>
                     </ul>
 
                 </li>
@@ -34,7 +36,7 @@
                     <a href="#">Profile &#8582;</a>
 
                     <ul class="dropdown-content">
-                        <li><a href="/Login" class="nav-link">Register</a></li>
+                        <li><a href="/Login" class="nav-link">SignUp</a></li>
 
                         {{#if loggedIn}}
                         <li><a href="/logout" id="logout" class="nav-link">Logout</a></li>
@@ -70,7 +72,7 @@
 
     <footer class="Primary-footer">
 
-        {{!-- <div class="footer-column">
+       <div class="footer-column">
             <ul>
                 <li class="footer-item">
                     <a href="#" class="footer-link">MEMBERSHIP</a>
@@ -144,7 +146,7 @@
                 </li>
 
             </ul>
-        </div> --}}
+        </div> 
         <div class="footer-column">
             <ul>
                 <li class="footer-item">
