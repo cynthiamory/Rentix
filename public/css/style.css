@@ -87,9 +87,31 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color:#30392f;
+  color: #EBEBD3;
   align-items: center;
+  /* width:50%; */
+  border:1px solid black;
 }
+.upload-Main{
+  display:flex;
+  justify-content: center;
 
+  margin:2%;
+  height:100vh
+}
+.upload-Main img{
+  object-fit: cover;
+  overflow: hidden;
+}
+.upload-img{
+  width:30%;
+
+}
+.Upload-Acc>label{
+  font-weight: 600;
+  padding:0.8rem
+}
 
 /*  */
 
@@ -190,29 +212,43 @@ select {
   color: #EBEBD3;
 flex-direction: column;
   align-items: Center;
-  border:1px solid black;
+  border-radius: 6px;
+  /* border:1px solid black; */
   margin:2%;
 width:40%;
 
 }
 .Image-Content{
   margin:2%;
-  width:50%;
+  width:40%;
   height:80%
+}
+#imageT{
+  object-fit: cover;
+
 }
 .Container-For{
   display:flex;
   /* flex-direction: column; */
   justify-content: space-evenly;
   align-items: center;
+  /* background-color:gray; */
 }
 .form-main{
   margin:2%;
-  border:1px solid black
+  /* border:1px solid black */
+}
+.form-main > input{
+  border-radius: 6px;
+
+
+}
+.form-main > label{
+  font-weight: 700;
 }
 .wrapper{
   display:flex;
-  border:1px solid black;
+  /* border:1px solid black; */
   justify-content: space-around;
   align-items: center;
   /* flex-direction: column; */
@@ -243,13 +279,14 @@ margin:1%;
   font-weight:600
 }
 .Date{
-  background-color:dodgerblue;
+  background-color:#666e6d;
   display: flex;
   text-align: center;
   padding:2rem;
+  margin:2%;
 flex-direction: column;
-  border:1px solid black;
-  width:60%
+border-radius: 6px;
+  /* width:60% */
 }
 .Date>input{
   padding:0.8rem;
@@ -472,6 +509,7 @@ border-radius: 0 0  0 100px;
 }
 
 .menu-toggle {
+
   padding: 1em;
   position: absolute;
   top: .5em;
@@ -792,7 +830,7 @@ width:100%;
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   
   .menu-toggle {
     display: none;
@@ -800,6 +838,7 @@ width:100%;
   
   .site-nav {
     height: auto;
+    list-style: none;
     position: relative;
     background: transparent;
     float: right;
@@ -809,7 +848,18 @@ width:100%;
   .site-nav li {
     display: inline-block;
     border: none;
+   
   }
+  /* .dropdown-content{
+    display:block;
+  text-align: start;
+border-radius: 0 0  0 100px;
+  margin:0.6rem;
+  padding:0.5rem;
+  margin-top:1%;
+  background-color: #30392f;
+  } */
+
   
   .site-nav a {
     padding: 0;
