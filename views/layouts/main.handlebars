@@ -13,14 +13,14 @@
     <header class="Primary-Header">
 
         <a href="/">
-            <h1 class="logo">Rentix</h1>
+            <h1 class="logo">RentiX</h1>
         </a>
 
         <nav class="site-nav">
             <ul>
                 <li><a href="/"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
-                <li><a href="/about"><i class="fa fa-info site-nav--icon"></i>About</a></li>
-                <li><a href="/Contact"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+                <li><a href="#aLink"><i class="fa fa-info site-nav--icon"></i>About</a></li>
+                <li><a href="#cLink"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
 
                 {{#if loggedIn}}
                 <li class="dropdown"><a href="/uploadTran"><i class="fa fa-envelope site-nav--icon"></i>Post &#8582;</a>
@@ -189,7 +189,7 @@
             </div> --}}
         </div>
     </footer>
-
+<script src="/js/index.js"></script>
     {{#if loggedIn}}
     <script src="/js/logout.js"></script>
     {{/if}}
