@@ -18,9 +18,9 @@ if (process.env.JAWSDB_URL) {
       host: 'co28d739i4m2sb7j.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
       dialect: 'mysql',
       port: 3306,
-      username:"cilrj443evctlfki",
-      password:"v39uxuofylii6yzp",
-      Database:"pwpy1bdn8lsphywp"
+      username:"az2rf91aa711fzh9",
+      password:"ociff299ig8cb09x",
+      Database:"kqh09rws7udoc379"
     }
   );
 }
