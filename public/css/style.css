@@ -956,14 +956,5 @@ width:100%;
   .site-nav--icon {
     display: none;
   }
-  .dropdown-content{
-    /* position: absolute;
-    left:0;
-    font-size: 1em; */
-    display:block;
-  
-  
-    
-   
-  }
+
 }
