@@ -28,5 +28,4 @@ function nextStep(){
 window.setInterval(nextStep,400);
 
 
-
 //
