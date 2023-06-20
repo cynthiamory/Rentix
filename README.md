@@ -1,6 +1,6 @@
 
 # Rentix
-![](https://img.shields.io/badge/License-MIT-blue.svg)![](https://img.shields.io/badge/ExpressJs-Sequelize-green.svg)![](https://img.shields.io/badge/mysql-ORM-red.svg)![](https://img.shields.io/badge/Routes-Handlebars-orange.svg)![](https://img.shields.io/badge/NodeJs-MVC-black.svg)
+![](https://img.shields.io/badge/License-MIT-blue.svg)   ![](https://img.shields.io/badge/ExpressJs-Sequelize-green.svg)   ![](https://img.shields.io/badge/mysql-ORM-red.svg)  ![](https://img.shields.io/badge/Routes-Handlebars-orange.svg)   ![](https://img.shields.io/badge/NodeJs-MVC-black.svg)
 
 ## Table of Contents
 
