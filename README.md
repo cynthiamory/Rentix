@@ -22,6 +22,7 @@
 The Rentix API is a RESTful API web service that serves as the backend for an event rental company. It provides a platform for customers to browse and rent various items for their events, such as venues, equipment, and decorations, and even transportation.
 
 <img src="./public/images/Rentix!.gif" width="600" height="300" />
+
 ## Features
 
 Venue Management: Customers can search and view available venues for their events. The API provides endpoints to retrieve details about each venue, including its capacity, amenities, and pricing.
