@@ -481,8 +481,7 @@ color: #EBEBD3;
   text-decoration: none;
 }
 .site-nav ul {
-  margin: 0;
-  padding: 0;
+ 
   list-style: none;
 }
 
@@ -635,7 +634,11 @@ h2,h3{
 }
 .rentix-para{
   font-size: 1.4rem;
-  font-weight: 600;
+  padding:1rem;
+  color: #EBEBD3;
+  /* font-weight: 600; */
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.2);
 }
 .rentix-main{
   display: flex;
@@ -813,7 +816,7 @@ overflow: hidden;
 .Contactus{
  
   margin-inline:2%;
-
+margin: 2%;
   width:50%;
 }
  iframe{
@@ -826,7 +829,12 @@ width:50%;
 }
 .contact-submit-btn{
 /* padding: 0%; */
-width:20%;
+width:50%;
+border:none;
+margin-top: 2%;
+background-color:#666e6d;
+color: #EBEBD3;
+border-bottom: inset;
 
 }
 .contact-form>label{
@@ -940,11 +948,13 @@ width:100%;
   
   .site-nav li {
     display: inline-block;
+
     border: none;
   }
   
   .site-nav a {
     padding: 0;
+ 
     margin-left: 3em;
   }
   
