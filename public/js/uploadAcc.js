@@ -11,6 +11,9 @@ async function getInfo(e) {
     const price = document.getElementById("priceId").value.trim();
     const fileInput = document.getElementById("filenameId").value;
   
+    let updatedText =  fileInput;
+    let result = updatedText.slice(0, 5);
+
     let data = {
       accommodation_place: place,
       accommodation_description: description,
@@ -18,15 +21,15 @@ async function getInfo(e) {
       price: price,
       accommodation_filename: fileInput // Use the selected File object.files[0],
     };
-  
-    if (place && description && location && price && fileInput) {
-      const response = await fetch('/api/accommodation', {
+    if (place && description && location && price && result) {
+      const response = await fetch('/api/accomodation', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) {
+        console.log(fileInput)
         console.log("Data seeded");
       } else {
         console.log("Error:", response.statusText);

@@ -6,26 +6,34 @@
 <main class="Accomodation-Main">
   <h2 class="Acc-Writing">Our Properties</h2>
   <section class="Acc-Main">
+
+
+
+
+    
     {{#if accomodationserial}}
       <div class="Acc-cards">
         <img id="previewImage" class="cards-img" src="/images/Accomadation/{{accomodationserial.accommodation_filename}}" alt="">
       </div>
       <div class="Acc-Info">
-        <a class="Cards-Title" href="/api/accomodation/{{accomodationserial.id}}">{{accomodationserial.accommodation_place}}</a>
+        <a class="Cards-Title" href="/api/accomodation/{{accomodationserial.id}}">{{ll}}{{accomodationserial.accommodation_place}}</a>
+        <p class="Cards-Title">{{accomodationserial.accommodation_description}}</p>
         <p class="Cards-Location"><span><img class="pin" src="/images/pin.png" alt="" srcset=""></span>{{accomodationserial.accommodation_location}}</p>
-        <p class="price">$ {{accomodationserial.price}}</p>
+        <p class="price">{{gg}} {{ accomodationserial.price}}</p>
       </div>
     {{else}}
       {{#each Accomodationserial}}
         <div class="Acc-cards">
-          <img id="previewImage" class="cards-img" src="/images/Accomadation/{{accommodation_filename}}" alt="">
+          <img id="previewImage" class="cards-img" src="/images/Accomadation/{{accommodation_filename}}" alt="{{accommodation_filename}}">
         </div>
         <div class="Acc-Info">
-          <a class="Cards-Title" href="/api/accomodation/{{id}}">{{accommodation_place}}</a>
+          <a class="Cards-Title" href="/api/accomodation/{{id}}"> {{accommodation_place}}</a>
           <p class="Cards-Location"><span><img class="pin" src="/images/pin.png" alt="" srcset=""></span>{{accommodation_location}}</p>
+          
           <p class="price">$ {{price}}</p>
         </div>
       {{/each}}
+      
     {{/if}}
   </section>
 </main>

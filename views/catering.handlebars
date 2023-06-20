@@ -3,6 +3,26 @@
     <h2 class="Acc-Writing">Our Pride</h2>
     <section class="Acc-Main">
     
+
+
+
+{{#if cateringserial}}
+
+ <div class="Acc-cards">
+            <img class="cards-img" src="/images/Catering-Images/{{ cateringserial.filename}}" alt="">
+    
+        </div>
+          <div class = "Acc-Info">
+              <a class="Cards-Title" href="/api/Catering/{{id}}">{{cateringserial.dish_name}}</a>
+              <p class="Cards-Title">{{cateringserial.dish_description}}</p>
+                <p class="Cards-Location">{{cateringserial.menu}}</p>
+                <p class="price">$ {{cateringserial.price}}</p>
+          </div>
+
+{{else}}
+
+
+
         {{#each catering}}
     
         <div class="Acc-cards">
@@ -16,5 +36,6 @@
           </div>
     
         {{/each}}
+        {{/if}}
     </section>
 </main>

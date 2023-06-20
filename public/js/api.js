@@ -6,17 +6,7 @@ async function getModels() {
   const year = document.getElementById("year").value.trim();
   const Transmission = document.getElementById("Transmission").value.trim();
   const fuel = document.getElementById("fuel").value.trim();
-  // document.getElementById("carClass").innerHTML = "";
-  // document.getElementById("highwayMpg").innerHTML = "";
-  // document.getElementById("cityMpg").innerHTML = "";
-  // document.getElementById("Combined").innerHTML = "";
-  // document.getElementById("cylinders").innerHTML = "";
-  // document.getElementById("mYear").innerHTML = "";
-  // document.getElementById("cMake").innerHTML = "";
-  // document.getElementById("cModel").innerHTML = "";
-  // document.getElementById("cFuel").innerHTML = "";
-  // document.getElementById("cTrans").innerHTML = "";
-
+  
 
 
   const url = `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=${model}&make=${make}&year=${year}&drive=${Transmission}&fuel_type=${fuel}`;
@@ -59,7 +49,7 @@ async function getModels() {
       const add = document.querySelector(".Specs-For")
       add.innerHTML=`Specs For: ${make} ${model}`
     } else {
-      // Handle the case when the response or required properties are not available
+      
       console.error("Invalid response or missing properties.");
     }
     //     const cClass = result[0].class;

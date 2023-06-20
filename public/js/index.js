@@ -29,9 +29,3 @@ window.setInterval(nextStep,400);
 
 
 //
-
-
-
-
-// 
-//

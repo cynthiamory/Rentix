@@ -39,9 +39,10 @@ router.get('/',async (req, res) => {
        const catering =await Catering.findByPk(req.params.id,{
       
       });
-    
+      const cateringserial = catering.get({plain:true})
+      console.log(cateringserial)
       res.render('catering',{
-        catering,
+        cateringserial ,
     
         // username: req.session.username,
         // logged_in: req.session.logged_in
