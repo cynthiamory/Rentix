@@ -1,4 +1,3 @@
-//CYNTHIA WAS HERE :)
 
 //IMPORT DOTENV PACKAGE
 require("dotenv").config();
@@ -16,9 +15,12 @@ if (process.env.JAWSDB_URL) {
     process.env.DB_USER,
     process.env.DB_PASSWORD,
     {
-      host: 'localhost',
+      host: 'co28d739i4m2sb7j.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
       dialect: 'mysql',
-      port: 3306
+      port: 3306,
+      username:"cilrj443evctlfki",
+      password:"v39uxuofylii6yzp",
+      Database:"pwpy1bdn8lsphywp"
     }
   );
 }
