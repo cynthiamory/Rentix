@@ -1,23 +1,47 @@
-<img  class = "transportation-Logo"src="/images/pexels-julia-volk-5207636.jpg" alt="" srcset="">
+<img class="transportation-Logo" src="/images/pexels-julia-volk-5207636.jpg" alt="" srcset="">
 
-<main class ="Accomodation-Main">
-    
-    <h2 class = "Acc-Writing">Our Collection</h2>
-    <section class = "Acc-Main">
-    
-        {{#each transport}}
-    
-        <div class = "Acc-cards">
-             <img  class = "cards-img"src="/images/Transportation/{{ filename}}" alt="A Picture of {{transportation_name}}">
-    
+<main class="Accomodation-Main">
+
+    <h2 class="Acc-Writing">Our Collection</h2>
+    <section class="Acc-Main">
+
+        {{#if transportserial}}
+
+
+        <div class="Acc-cards">
+            <img class="cards-img" src="/images/Transportation/{{transportserial.filename}}"
+                alt="A Picture of {{transportserial.transportation_name}}">
+
         </div>
-         <div class = "Acc-Info">
-                <a class = "Cards-Title" href = "/api/transport/{{id}}">{{transportation_name}}</a>
-    
-                <p class = "Cards-Location"><span><img class = "pin"src="/images/car-seat.png" alt="" srcset=""></span>{{ capacity}}</p>
-                <p class = "price">$ {{price}} A Night</p>
-            </div>
-    
+        <div class="Acc-Info">
+            <a class="Cards-Title" href="/api/transport/{{id}}">{{transportserial.transportation_name}}</a>
+            <p class="Cards-Title">{{transportserial.transportation_description}}</p>
+
+            <p class="Cards-Location"><span><img class="pin" src="/images/car-seat.png" alt="" srcset=""></span>{{
+                transportserial.capacity}}</p>
+            <p class="price">$ {{transportserial.price}} A Night</p>
+        </div>
+
+
+        {{else}}
+
+
+        {{#each transport}}
+
+        <div class="Acc-cards">
+            <img class="cards-img" src="/images/Transportation/{{ filename}}"
+                alt="A Picture of {{transportation_name}}">
+
+        </div>
+        <div class="Acc-Info">
+            <a class="Cards-Title" href="/api/transport/{{id}}">{{transportation_name}}</a>
+
+            <p class="Cards-Location"><span><img class="pin" src="/images/car-seat.png" alt="" srcset=""></span>{{
+                capacity}}</p>
+            <p class="price">$ {{price}} A Night</p>
+        </div>
+
         {{/each}}
+        {{/if}}
     </section>
 </main>

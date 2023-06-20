@@ -1,5 +1,8 @@
 //IMPORT EXPRESS AND MODELS
 const router = require('express').Router();
+const emoji = require ('node-emoji');
+
+
 const { Accomodation,Transportation,Trending, Catering } = require('../../models');
 
 // THE CATERING ENDPOINTS
@@ -21,9 +24,9 @@ router.get('/',async (req, res) => {
     })
     // serialize Data
     const Accomodationserial =Accomodata.map((Accomodationinfo)=>Accomodationinfo.get({plain:true}));
-  
+    let gg =emoji.get('dollar')
     res.render('accomodation',{
-     Accomodationserial,
+     Accomodationserial,gg
       // username: req.session.username,
       //   logged_in: req.session.logged_in
     })
@@ -40,11 +43,18 @@ router.get('/',async (req, res) => {
       
       });
 
+      let gg =emoji.get('dollar')
+
+let ll = emoji.get("house")
+
+
+
+      console.log(gg)
     const accomodationserial =Accomodata.get({plain:true})
-    console.log(accomodationserial)
+    // console.log(accomodationserial)
 
       res.render('accomodation',{
-        accomodationserial,
+        accomodationserial,gg,ll 
     
         // username: req.session.username,
         // logged_in: req.session.logged_in
