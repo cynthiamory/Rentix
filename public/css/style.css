@@ -769,14 +769,44 @@ overflow: hidden;
  text-align: center;
 
 }
+.wrap-id{
+  display:flex;
+  height: 60vh;
+ margin:2%;
+  align-items: center;
+  justify-content: center;
+}
 .Acc-Info{
   flex: 0 0 10%;
+}
+.Acc-Info-id{
+  width:50%;
+  height: auto;
+
+}
+.book-id{
+  
+  text-decoration: none;
+  background-color: #30392f;
+  color: #EBEBD3;
+  padding:0.4rem 2rem;
+}
+.section-id{
+  display: flex;
+  width:80%;
+  align-items: center;
+  
+  justify-content: center;
 }
 .cards-img {
  overflow: hidden;
  height: 100%;
  width: 100%;
  border-radius: 10px;
+}
+.cards-img-id{
+  max-width:50%;
+  border-radius: 10px;
 }
 .Acc-Writing{
   display:flex;
@@ -789,6 +819,15 @@ overflow: hidden;
   font-size:1.2rem;
   font-weight: 600;
 }
+.Cards-Title-id{
+  font-size:1.7rem;
+  color: black;
+  /* text-decoration: none; */
+}
+.Cards-Title-id-des{
+font-size:1.5rem;
+}
+
 .pin{
   width:1rem;
   aspect-ratio: 1;
