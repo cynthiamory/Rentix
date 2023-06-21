@@ -100,13 +100,6 @@ Authentication and Authorization: The API implements token-based authentication 
 
 ## Credits
 - Rentix Contributors: Amrit, Cynthia,Matthew, Rohit, Sagenthave
-- Institution: The University Of Toronto
-- Course: Bootcamp Full Stack Development
-- Instructor: Ali Masqood
-- Teachers Assistant: Shihan
-- Tutor: TBD
-- Learing Assistant Ask BCS Support: TBD
-- Online Support: TBD
 
 ## License
 
