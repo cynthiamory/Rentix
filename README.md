@@ -67,7 +67,7 @@ So that I can easily find and book the necessary resources.
 
 
 ## Link To Deployed Website
-**Deployed Link-
+**Deployed Link- https://rentixx-64a3fa155998.herokuapp.com/
 
 
 ## Installation and Usage
