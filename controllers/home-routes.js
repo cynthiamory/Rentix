@@ -36,7 +36,7 @@ router.get('/Login', (req, res) => {
 
 
 
-  res.render('Login');
+  res.render('login');
 });
 
 
