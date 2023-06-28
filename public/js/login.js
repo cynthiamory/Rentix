@@ -17,7 +17,7 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the profile page
       document.location.replace('/');
     } else {
-      alert("Email and password does not Match");
+      alert("Email and password does not match !Please try again");
     }
   }
 };
